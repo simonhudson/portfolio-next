@@ -5,7 +5,7 @@ body {
 main {
 	
 	@include media(tablet-p) {
-		@include padding-y-lg();
+		@include padding-y-xlg();
 	}
 	
 }

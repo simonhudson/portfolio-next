@@ -1,9 +1,5 @@
 @import 'static/css/styles';
 
-.banner__outer {
-	@include margin-b();
-}
-
 .banner {
 	display: flex;
 	flex-direction: column;
