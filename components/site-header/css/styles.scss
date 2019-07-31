@@ -26,9 +26,9 @@
 	}
 	
 	span:nth-of-type(2) {
-		@include strong();
 		color: palette(primary, bodyText);
 		font-size: rem($base-font-size);
+		font-weight: 700;
 	}
 
 }
