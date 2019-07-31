@@ -1,7 +1,11 @@
 'use strict';
 
 import Head from 'next/head';
+
+import Banner from 'components/banner';
+import Portfolio from 'components/portfolio';
 import SiteHeader from 'components/site-header';
+import SiteFooter from 'components/site-footer';
 
 import 'static/css/styles.scss';
 
@@ -17,6 +21,9 @@ export default () => (
 		</Head>
 		<body>
 			<SiteHeader />
+			<Banner />
+			<Portfolio />
+			<SiteFooter />
 		</body>
 	</html>
 	

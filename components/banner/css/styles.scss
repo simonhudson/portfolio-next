@@ -1,0 +1,82 @@
+@import 'static/css/styles';
+
+.banner__outer {
+	@include margin-b();
+}
+
+.banner {
+	display: flex;
+	flex-direction: column;
+	
+	@include media(tablet-p) {
+		align-items: center;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+}
+
+.banner__primary,
+.banner__secondary {
+	@include width-full();
+}
+
+.banner__primary {
+	@include padding();
+	background: url('../../../static/imgs/double-quotations.svg') 0 0 no-repeat;
+	background-size: 100px auto;
+	
+	@include media(tablet-l) {
+		width: calc(100% / 3 * 2);
+	}
+	
+}
+
+.banner__secondary {
+
+	@include media(tablet-p) {
+		@include padding-l();
+		width: calc(100% / 4 * 1);
+	}
+		
+}
+
+.banner__title {
+	@include divider(5px);
+	@include h6();
+	@include no-margin();
+	opacity: 0.75;
+	
+	@include media(tablet-p) {
+		@include h4();
+		@include no-margin();
+	}
+	
+	span:first-of-type {
+		@include h3();
+		@include margin-b();
+		display: block;
+		font-weight: 700;
+		
+		@include media(tablet-p) {
+		    @include h1();
+			font-weight: 700;
+		}
+		
+	}
+	
+}
+
+.banner__img {
+	@include box-shadow();
+	@include circle();
+	@include visually-hidden();
+	border: 3px solid #fff;
+
+	@include media(tablet-p) {
+	    @include visually-shown();
+		height: 240px;
+		width: auto;
+	}
+
+}
