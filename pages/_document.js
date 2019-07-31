@@ -1,7 +1,7 @@
 'use strict';
 
 import Document, { Head, Main, NextScript } from 'next/document'
-import css from 'static/css/styles.scss';
+import css from '../static/css/styles.scss';
 
 export default class App extends Document {
 	
