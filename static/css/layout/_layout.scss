@@ -1,0 +1,23 @@
+body {
+	border-top: 6px solid palette(primary, b);
+}
+
+main {
+	
+	@include media(tablet-p) {
+		@include padding-y-lg();
+	}
+	
+}
+
+.wrap {
+	@include wrap();
+}
+
+.wrap--narrow {
+	@include wrap-narrow();
+}
+
+.band {
+	@include band();
+}

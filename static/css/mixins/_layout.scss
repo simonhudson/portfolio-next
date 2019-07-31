@@ -1,0 +1,46 @@
+@mixin wrap() {
+	@include padding-x();
+	@include width-full();
+	margin: 0 auto;
+
+	@include media(desktop) {
+		@include width-two-thirds();
+	}
+}
+
+@mixin wrap-narrow() {
+	@include wrap();
+
+	@include media(tablet-p) {
+		width: 45%;
+	}
+
+}
+
+@mixin band() {
+	@include padding-y-lg();
+	@include width-full();
+	background: #f9f9f9;
+	
+	@include media(tablet-p) {
+	    @include padding-y-lg();
+	}
+	
+	@include media(tablet-l) {
+	    @include padding-y-xlg();
+	}
+	
+}
+
+@mixin divider($width: 1px) {
+	
+	&:after {
+		@include margin-t();
+		@include margin-b();
+		content: '';
+		display: block;
+		border-bottom: $width solid palette(primary, b);
+		width: 10%;
+	}
+	
+}
