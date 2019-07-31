@@ -1,0 +1,39 @@
+@import 'static/css/styles';
+
+.site-logo {
+	@include transition();
+	height: 40px;
+
+	@include media(tablet-p) {
+		height: 60px;
+	}
+
+}
+
+.site-logo--header {
+	@include margin-r-sm();
+	@include transition();
+
+	@include media(phone-p, 'max') {
+		
+		.is-scrolled & {
+			@include no-margin();
+			height: 0;
+		}
+	   
+	}
+	
+	@include media(tablet-p) {
+	    
+		.is-scrolled & {
+			height: 40px;
+		}
+		
+	}
+	
+}
+
+.site-logo--footer {
+	filter: grayscale(1);
+	opacity: 0.20;
+}

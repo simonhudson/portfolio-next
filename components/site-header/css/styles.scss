@@ -1,0 +1,34 @@
+@import 'static/css/styles';
+
+.site-header {
+	@include padding-y();
+	@include transition();
+	@include width-full();
+	align-items: center;
+	background: palette(primary, white);
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.site-header__strap {
+	@include no-margin();
+	@include uppercase();
+	color: rgba(palette(primary, bodyText), .65);
+	line-height: rem($base-font-size * 1.4);
+	
+	span:first-of-type {
+		@include visually-hidden();
+		
+		@include media(tablet-p) {
+		    @include visually-shown();
+		}
+		
+	}
+	
+	span:nth-of-type(2) {
+		@include strong();
+		color: palette(primary, bodyText);
+		font-size: rem($base-font-size);
+	}
+
+}
