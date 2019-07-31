@@ -34,13 +34,6 @@ class Item extends Component {
             </a>
         );
     };
-    
-    getItemLevel = () => {
-        return null;
-        if (this.props.index === 0) return 'item--primary';
-        if (this.props.index > 0 && this.props.index < 3) return 'item--secondary';
-        return null;
-    }
 
     render = () => {
         
@@ -59,7 +52,7 @@ class Item extends Component {
         if (omit) return null;
         
         return (
-            <div className={`item ${this.getItemLevel()}`}>
+            <div className={`item`}>
                 <div className="item__wrap">
                     <div className="item__img">
                         <img alt="View project (opens in a new tab/window)" src="http://placehold.it/350x150" />
