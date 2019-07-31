@@ -1,6 +1,7 @@
 @import 'static/css/styles';
 
 .site-logo {
+	@include margin-r-sm();
 	@include transition();
 	height: 40px;
 
