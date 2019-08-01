@@ -1,6 +1,7 @@
 'use strict';
 
 import React, { Component } from 'react';
+import Icon from 'components/icon';
 
 class Item extends Component {
 
@@ -65,10 +66,10 @@ class Item extends Component {
                         <div className="item__text" dangerouslySetInnerHTML={{ __html: this.generateCopyMarkup() }}>
                         </div>
                         <div className="item__links">
-                        <a className="btn--primary item__link" href={props.url} rel="noopener noreferrer" target="_blank">
-                        View <span className="visually-hidden">{props.title}</span>project
+                        <a className="item__link" href={props.url} rel="noopener noreferrer" target="_blank">
+                            View <span className="visually-hidden">{props.title}</span>project
+                            <Icon type={`arrow-right`} />
                         </a>
-                        {this.renderGitHub()}
                         </div>
                     </div>
                 </div>

@@ -149,4 +149,8 @@
 	
 	}
 	
+	.fa {
+		@include margin-l-sm();
+	}
+	
 }
