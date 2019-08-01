@@ -1,6 +1,7 @@
 @import 'static/css/styles';
 
 .portfolio {
+	@include padding-y();
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -70,7 +71,7 @@
 .item__wrap {
 	
 	@include media(tablet-p) {
-	    @include padding-x-xlg();
+	    @include padding-x();
 	}
 	
 }

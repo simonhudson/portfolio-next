@@ -2,14 +2,6 @@ body {
 	border-top: 6px solid palette(primary, b);
 }
 
-main {
-	
-	@include media(tablet-p) {
-		@include padding-y-xlg();
-	}
-	
-}
-
 .wrap {
 	@include wrap();
 }
