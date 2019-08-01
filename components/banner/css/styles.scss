@@ -23,7 +23,7 @@
 	background-size: 100px auto;
 	
 	@include media(tablet-l) {
-		width: calc(100% / 3 * 2);
+		width: calc(100% / 4 * 3);
 	}
 	
 }
