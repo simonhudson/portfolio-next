@@ -1,19 +1,15 @@
 @import 'static/css/styles';
 
 .external-links {
-	@include padding-b-xlg();
-	@include text-center();
 	list-style: none;
-	
-	@include media(tablet-p) {
-		@include no-padding();
-	    @include text-left();
-	}
-	
+}
+
+.external-links__item {
+	display: inline;
 }
 
 .external-links__item:not(:last-of-type) {
-	@include margin-b();
+	@include margin-r-lg();
 }
 
 .external-links__link {
@@ -28,15 +24,12 @@
 		opacity: 1;
 	}
 	
-	@include media(tablet-p) {
-		display: block;
-	}
-	
 }
 
 .external-links__link-text {
 	@include margin-l();
 	@include strong();
+	@include visually-hidden();
 	font-size: rem($base-font-size);
 	vertical-align: middle;
 }

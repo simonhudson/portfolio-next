@@ -1,10 +1,11 @@
 @import 'static/css/styles';
 
 .site-logo {
-	@include margin-r-sm();
+	@include margin-b();
 	height: 40px;
 
 	@include media(tablet-p) {
+		@include no-margin();
 		height: 60px;
 	}
 

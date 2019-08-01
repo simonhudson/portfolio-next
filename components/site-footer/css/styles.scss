@@ -1,7 +1,7 @@
 @import 'static/css/styles';
 
 .site-footer {
-	@include padding-y();
+	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -16,9 +16,4 @@
 	@include no-margin();
 	@include text-center();
 	color: rgba(palette(primary, bodyText), .35);
-	
-	@include media(tablet-p) {
-	    align-self: flex-end;
-	}
-	
 }
