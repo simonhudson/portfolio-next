@@ -9,6 +9,10 @@
 
 }
 
+.site-logo--header {
+	@include margin-r-sm();
+}
+
 .site-logo--footer {
 	@include margin-b();
 	filter: grayscale(1);
