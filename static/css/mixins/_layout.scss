@@ -22,12 +22,17 @@
 	@include width-full();
 	background: #f9f9f9;
 	
-	@include media(tablet-p) {
-	    @include padding-y-lg();
-	}
-	
 	@include media(tablet-l) {
 	    @include padding-y-xlg();
+	}
+	
+}
+
+@mixin band-thin() {
+	@include band();
+	
+	@include media(tablet-l) {
+	    @include padding-y-lg();
 	}
 	
 }

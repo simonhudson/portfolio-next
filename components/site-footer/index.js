@@ -4,18 +4,18 @@ import React from 'react';
 import SiteLogo from 'components/site-logo';
 import css from './css/styles.scss';
 
-const getNowDate = () => {
+const getYear = () => {
 	const now = new Date();
-	return now;
+	return now.getFullYear();
 }
 
 const SiteFooter = props => {
 
 	return (
-		<div className="band">
+		<div className="band band--thin">
 			<footer className="site-footer wrap">
 				<SiteLogo context="footer" />
-				<p className="site-footer__copyright">&copy; Simon Hudson {getNowDate().getFullYear()}</p>
+				<p className="site-footer__copyright">&copy; Simon Hudson {getYear()}</p>
 			</footer>
 		</div>
 	);

@@ -13,3 +13,7 @@ body {
 .band {
 	@include band();
 }
+
+.band--thin {
+	@include band-thin();
+}
