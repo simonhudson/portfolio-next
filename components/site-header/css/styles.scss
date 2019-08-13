@@ -12,6 +12,7 @@
 
 .site-header__strap {
 	@include no-margin();
+	@include sans-serif();
 	@include uppercase();
 	color: rgba(palette(primary, bodyText), .65);
 	line-height: rem($base-font-size * 1.4);

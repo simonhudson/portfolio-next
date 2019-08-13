@@ -15,7 +15,7 @@
 	
 }
 
-.item {
+.portfolio-item {
 	@include padding-b();
 	@include width-full();
 
@@ -29,7 +29,7 @@
 	
 }
 
-.item--primary {
+.portfolio-item--primary {
 	
 	@include media(tablet-p) {
 		@include width-full();
@@ -40,11 +40,11 @@
 			flex-grow: 1;
 		}
 		
-		.item__img {
+		.portfolio-item__img {
 			@include padding-r-xlg();
 		}
 		
-		.item__content {
+		.portfolio-item__content {
 			@include no-padding();
 		}
 		
@@ -56,7 +56,7 @@
 
 }
 
-.item--secondary {
+.portfolio-item--secondary {
 	
 	@include media(tablet-p) {
 		@include width-half();
@@ -68,7 +68,7 @@
 	
 }
 
-.item__wrap {
+.portfolio-item__wrap {
 	
 	@include media(tablet-p) {
 	    @include padding-x();
@@ -76,7 +76,7 @@
 	
 }
 
-.item__img {
+.portfolio-item__img {
 	
 	img {
 		@include margin-b-xsm();
@@ -87,11 +87,11 @@
 
 }
 
-.item__info {
+.portfolio-item__info {
 	@include divider();
 }
 
-.item__title {
+.portfolio-item__title {
 	@include no-margin();
 	@include padding-b-sm();
 	@include sans-serif();
@@ -101,18 +101,19 @@
 	font-size: rem($base-font-size);
 }
 
-.item__content {
+.portfolio-item__content {
 	@include padding-y();
 	display: flex;
 	flex-direction: column;
 }
 
-.item__made-with {
+.portfolio-item__made-with {
 	@include no-margin();
 	list-style: none;
 	
 	li {
 		@include margin-b-xsm();
+		@include sans-serif();
 		color: rgba(palette(primary, bodyText), .75);
 		display: inline-block;
 
@@ -129,7 +130,7 @@
 
 }
 
-.item__links {
+.portfolio-item__links {
 	@include padding-y-xsm();
 	
 	@include media(tablet-p) {
@@ -138,7 +139,8 @@
 	
 }
 
-.item__link {
+.portfolio-item__link {
+	@include button--lozenge--hollow();
 	@include margin-r();
 	
 	@include media(tablet-p) {

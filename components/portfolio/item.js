@@ -21,7 +21,7 @@ class Item extends Component {
 
     renderMadeWith = () => {
         return (
-            <ul className="item__made-with">				
+            <ul className="portfolio-item__made-with">				
                 {this.props.madeWith.map((item, index) => <li key={index}>{item}</li>)}
             </ul>
         );
@@ -30,7 +30,7 @@ class Item extends Component {
     renderGitHub = () => {
         if (!this.props.github) return null;
         return (
-            <a className="btn--primary--hollow item__link" href={`http://www.github.com/simonhudson/${this.props.github}`} rel="noopener noreferrer" target="_blank">
+            <a className="btn--primary--hollow portfolio-item__link" href={`http://www.github.com/simonhudson/${this.props.github}`} rel="noopener noreferrer" target="_blank">
                 View <span className="visually-hidden">{this.props.title}</span> on Github
             </a>
         );
@@ -53,20 +53,20 @@ class Item extends Component {
         if (omit) return null;
         
         return (
-            <div className={`item`}>
-                <div className="item__wrap">
-                    <div className="item__img">
+            <div className={`portfolio-item`}>
+                <div className="portfolio-item__wrap">
+                    <div className="portfolio-item__img">
                         <img alt="View project (opens in a new tab/window)" src="http://placehold.it/350x150" />
                     </div>
-                    <div className="item__content">
-                        <div className="item__info">
-                            <h2 className="item__title">{props.title}</h2>
+                    <div className="portfolio-item__content">
+                        <div className="portfolio-item__info">
+                            <h2 className="portfolio-item__title">{props.title}</h2>
                         {this.renderMadeWith()}    
                         </div>
-                        <div className="item__text" dangerouslySetInnerHTML={{ __html: this.generateCopyMarkup() }}>
+                        <div className="portfolio-item__text" dangerouslySetInnerHTML={{ __html: this.generateCopyMarkup() }}>
                         </div>
-                        <div className="item__links">
-                        <a className="item__link" href={props.url} rel="noopener noreferrer" target="_blank">
+                        <div className="portfolio-item__links">
+                        <a className="portfolio-item__link" href={props.url} rel="noopener noreferrer" target="_blank">
                             View <span className="visually-hidden">{props.title}</span>project
                             <Icon type={`arrow-right`} />
                         </a>

@@ -20,6 +20,11 @@
 	color: palette(primary, b);
 }
 
+@mixin button--lozenge--hollow() {
+	@include button--primary--hollow();
+	@include border-radius(100px);
+}
+
 @mixin button-row() {
 	display: flex;
 	justify-content: space-between;
