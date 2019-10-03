@@ -22,6 +22,10 @@
 	width:25%;
 }
 
+@mixin width-three-quarters() {
+	width: 75%;
+}
+
 @mixin width-fifth() {
 	width:20%;
 }

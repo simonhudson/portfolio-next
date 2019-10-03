@@ -18,65 +18,27 @@
 .portfolio-item {
 	@include padding-b();
 	@include width-full();
-
-	@include media(tablet-p) {
-		@include width-half();
-	}
-
-	@include media(tablet-l) {
-		@include width-third();
-	}
-	
-}
-
-.portfolio-item--primary {
+	display: flex;
+	flex-direction: column;
 	
 	@include media(tablet-p) {
-		@include width-full();
-		display: flex;
+	    @include padding-b-xlg();
+		flex-direction: row;
 		
-		& div {
-			flex-basis: 0;
-			flex-grow: 1;
-		}
-		
-		.portfolio-item__img {
-			@include padding-r-xlg();
-		}
-		
-		.portfolio-item__content {
-			@include no-padding();
+		&:nth-of-type(2n) {
+			flex-direction: row-reverse;
 		}
 		
 	}
-
-	@include media(tablet-l) {
-		@include width-full();
-	}
-
-}
-
-.portfolio-item--secondary {
 	
-	@include media(tablet-p) {
-		@include width-half();
-	}
-	
-	@include media(tablet-l) {
-		@include width-half();
-	}
-	
-}
-
-.portfolio-item__wrap {
-	
-	@include media(tablet-p) {
-	    @include padding-x();
-	}
 	
 }
 
 .portfolio-item__img {
+	
+	@include media(tablet-p) {
+	    @include width-full();
+	}
 	
 	img {
 		@include margin-b-xsm();
@@ -105,6 +67,11 @@
 	@include padding-y();
 	display: flex;
 	flex-direction: column;
+	
+	@include media(tablet-p) {
+		@include no-padding();
+	    @include padding-l-lg();
+	}
 }
 
 .portfolio-item__made-with {

@@ -4,7 +4,7 @@
 	margin: 0 auto;
 
 	@include media(desktop) {
-		@include width-two-thirds();
+		width: 80%;
 	}
 }
 
