@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import css from './css/styles.scss';
+import './css/styles.scss';
 import NewTabWarning from 'components/new-tab-warning';
 import Icon from 'components/icon';
 

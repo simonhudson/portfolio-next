@@ -2,7 +2,7 @@
 
 import React from 'react';
 import SiteLogo from 'components/site-logo';
-import css from './css/styles.scss';
+import './css/styles.scss';
 
 const SiteHeader = props => {
 

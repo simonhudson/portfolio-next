@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ExternalLinks from 'components/external-links';
-import css from './css/styles.scss';
+import './css/styles.scss';
 
 const Banner = props => {
 

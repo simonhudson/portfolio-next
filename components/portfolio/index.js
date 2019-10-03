@@ -3,7 +3,7 @@
 import React from 'react';
 import Item from './item';
 import data from './portfolio.json';
-import css from './css/styles.scss';
+import './css/styles.scss';
 
 const Portfolio = props => {
 	

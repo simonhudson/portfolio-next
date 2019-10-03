@@ -2,7 +2,7 @@
 
 import React from 'react';
 import logo from './imgs/logo.svg';
-import css from './css/styles.scss';
+import './css/styles.scss';
 
 const setContextClass = context => {
 	if (context) return `site-logo--${context}`;
