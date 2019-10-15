@@ -38,25 +38,19 @@
 }
 
 .banner__title {
-	@include divider(5px);
 	@include h6();
-	@include no-margin();
 	opacity: 0.75;
 	
 	@include media(tablet-p) {
 		@include h4();
-		@include no-margin();
 	}
 	
 	span:first-of-type {
 		@include h3();
-		@include margin-b();
 		display: block;
-		font-weight: 700;
 		
 		@include media(tablet-p) {
 		    @include h1();
-			font-weight: 700;
 		}
 		
 	}

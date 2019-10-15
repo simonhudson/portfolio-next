@@ -16,8 +16,10 @@ const SiteFooter = props => {
 		<div className="band band--thin">
 			<footer className="site-footer wrap">
 				<About />
-				<SiteLogo context="footer" />
-				<p className="site-footer__copyright">&copy; Simon Hudson {getYear()}</p>
+				<div className="site-footer__copyright">
+					<SiteLogo context="footer" />
+					<p className="site-footer__copyright-text">&copy; Simon Hudson {getYear()}</p>
+				</div>
 			</footer>
 		</div>
 	);

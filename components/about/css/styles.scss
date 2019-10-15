@@ -3,3 +3,24 @@
 .about {
 	@include width-full();
 }
+
+.about__content {
+	display: flex;
+	flex-direction: column;
+	
+	@include media(tablet-p) {
+		flex-direction: row;
+	}
+	
+}
+
+.about__img {
+	@include circle();
+	height: auto;
+	width: 250px;
+	
+	@include media(tablet-p) {
+	    @include margin-r-lg();
+	}
+	
+}
