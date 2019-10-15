@@ -89,6 +89,7 @@
 
 .portfolio-item__made-with {
 	@include no-margin();
+	@include margin-b();
 	list-style: none;
 	
 	li {
@@ -132,7 +133,7 @@
 	}
 	
 	.fa {
-		font-size: rem($base-font-size * 2);
+		font-size: rem($base-font-size * 1.6);
 	}
 	
 }

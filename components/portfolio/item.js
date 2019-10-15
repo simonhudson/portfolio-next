@@ -1,7 +1,7 @@
 'use strict';
 
 import React, { Component } from 'react';
-import Icon from 'components/icon';
+import ItemLink from './item-link';
 
 class Item extends Component {
 
@@ -60,21 +60,23 @@ class Item extends Component {
                 <div className="portfolio-item__content">
                     <div className="portfolio-item__info">
                         <h2 className="portfolio-item__title">{props.title}</h2>
-                    {this.renderMadeWith()}    
+                        {this.renderMadeWith()}
+                        <div className="portfolio-item__links">
+                            <ItemLink
+                                href={url}
+                                title={`${title} site`}
+                                icon="link"
+                            />
+                            {github && (
+                                <ItemLink
+                                    href={github}
+                                    title={`${title} Github repository`}
+                                    icon="github"
+                                />
+                            )}
+                        </div>
                     </div>
                     <div className="portfolio-item__text" dangerouslySetInnerHTML={{ __html: this.generateCopyMarkup() }}>
-                    </div>
-                    <div className="portfolio-item__links">
-                        <a className="portfolio-item__link" href={url} rel="noopener noreferrer" target="_blank">
-                            <span className="visually-hidden">View {title}</span>
-                            <Icon type="link" />
-                        </a>
-                        {github && (
-                            <a className="portfolio-item__link" href={github} rel="noopener noreferrer" target="_blank">
-                                <span className="visually-hidden">View {props.title} Github repository</span>
-                                <Icon type="github" />
-                            </a>
-                        )}
                     </div>
                 </div>
             </div>
