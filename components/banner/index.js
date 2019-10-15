@@ -6,10 +6,9 @@ import './css/styles.scss';
 
 const scrollToAbout = e => {
 	e.preventDefault ? e.preventDefault() : (e.returnValue = false);
-	console.log(`>>> : ${1}`);
-	document.getElementById('about').scrollIntoView({
-		behavior: 'smooth', block: 'start'
-	});
+	const aboutElement = document.getElementById('about');
+	if (!aboutElement) return;
+	aboutElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
 };
 
 const Banner = props => {
