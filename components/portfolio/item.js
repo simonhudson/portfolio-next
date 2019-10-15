@@ -65,10 +65,16 @@ class Item extends Component {
                     <div className="portfolio-item__text" dangerouslySetInnerHTML={{ __html: this.generateCopyMarkup() }}>
                     </div>
                     <div className="portfolio-item__links">
-                    <a className="portfolio-item__link" href={props.url} rel="noopener noreferrer" target="_blank">
-                        View <span className="visually-hidden">{props.title}</span>project
-                        <Icon type={`arrow-right`} />
-                    </a>
+                        <a className="portfolio-item__link" href={url} rel="noopener noreferrer" target="_blank">
+                            <span className="visually-hidden">View {title}</span>
+                            <Icon type="link" />
+                        </a>
+                        {github && (
+                            <a className="portfolio-item__link" href={github} rel="noopener noreferrer" target="_blank">
+                                <span className="visually-hidden">View {props.title} Github repository</span>
+                                <Icon type="github" />
+                            </a>
+                        )}
                     </div>
                 </div>
             </div>

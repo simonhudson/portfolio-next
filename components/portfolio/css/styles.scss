@@ -4,6 +4,10 @@
 	@include padding-y();
 	display: flex;
 	flex-wrap: wrap;
+	
+	@include media(tablet-p) {
+	    @include padding-y-lg();
+	}
 }
 
 .portfolio__wrap {
@@ -72,6 +76,15 @@
 		@include no-padding();
 	    @include padding-l-lg();
 	}
+	
+	.portfolio-item:nth-of-type(2n) & {
+		
+		@include media(tablet-p) {
+			@include no-padding();
+			@include padding-r-lg();
+		}
+		
+	}
 }
 
 .portfolio-item__made-with {
@@ -99,6 +112,7 @@
 
 .portfolio-item__links {
 	@include padding-y-xsm();
+	display: flex;
 	
 	@include media(tablet-p) {
 		display: flex;
@@ -107,7 +121,6 @@
 }
 
 .portfolio-item__link {
-	@include button--lozenge--hollow();
 	@include margin-r();
 	
 	@include media(tablet-p) {
@@ -119,7 +132,7 @@
 	}
 	
 	.fa {
-		@include margin-l-sm();
+		font-size: rem($base-font-size * 2);
 	}
 	
 }
