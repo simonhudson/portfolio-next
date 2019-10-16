@@ -1,6 +1,6 @@
 @import 'static/css/styles';
 
-.site-footer {
+.site-footer__copyright {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -12,7 +12,7 @@
 	
 }
 
-.site-footer__copyright {
+.site-footer__copyright-text {
 	@include no-margin();
 	@include text-center();
 	color: rgba(palette(primary, bodyText), .35);

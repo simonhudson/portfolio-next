@@ -2,6 +2,7 @@
 
 import React from 'react';
 import SiteLogo from 'components/site-logo';
+import About from 'components/about';
 import './css/styles.scss';
 
 const getYear = () => {
@@ -14,8 +15,11 @@ const SiteFooter = props => {
 	return (
 		<div className="band band--thin">
 			<footer className="site-footer wrap">
-				<SiteLogo context="footer" />
-				<p className="site-footer__copyright">&copy; Simon Hudson {getYear()}</p>
+				<About />
+				<div className="site-footer__copyright">
+					<SiteLogo context="footer" />
+					<p className="site-footer__copyright-text">&copy; Simon Hudson {getYear()}</p>
+				</div>
 			</footer>
 		</div>
 	);

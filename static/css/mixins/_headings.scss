@@ -5,8 +5,13 @@
 	line-height: 1.6em;
 	margin-bottom: 1rem;
 }
+@mixin strong-heading() {
+	font-weight: 700;
+	opacity: 0.75;
+}
 @mixin h1() {
 	@include headings();
+	@include strong-heading();
 	font-size: rem($base-font-size * 2);
 	@include media(tablet-l) {
 		font-size: rem($base-font-size * 3);
@@ -14,6 +19,7 @@
 }
 @mixin h2() {
 	@include headings();
+	@include strong-heading();
 	font-size: rem($base-font-size * 1.8);
 	@include media(tablet-l) {
 		font-size: rem($base-font-size * 1.8);
@@ -21,6 +27,7 @@
 }
 @mixin h3() {
 	@include headings();
+	@include strong-heading();
 	font-size: rem($base-font-size * 1.6);
 	@include media(tablet-l) {
 		font-size: rem($base-font-size * 1.6);
