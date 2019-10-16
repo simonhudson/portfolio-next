@@ -11,7 +11,7 @@ import 'static/css/styles.scss';
 
 export default () => (
 	
-	<html>
+	<html lang="en">
 		<Head>
 			<title>Web Design &amp; Development by Simon Hudson</title>
 			<meta name="viewport" content="initial-scale=1.0, width=device-width" />
