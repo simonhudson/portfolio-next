@@ -14,6 +14,7 @@ class Item extends Component {
     }
     
     generateCopyMarkup = () => {
+        if (this.props.omitText) return null;
         let paragraphs = [];
         this.props.text.map((item, index) => paragraphs.push(`<p>${item}</p>`));
         return paragraphs.join(' ');
@@ -61,20 +62,20 @@ class Item extends Component {
                     <div className="portfolio-item__info">
                         <h2 className="portfolio-item__title">{props.title}</h2>
                         {this.renderMadeWith()}
-                        <div className="portfolio-item__links">
+                    </div>
+                    <div className="portfolio-item__links">
+                        <ItemLink
+                            href={url}
+                            title={`${title} site`}
+                            icon="link"
+                        />
+                        {github && (
                             <ItemLink
-                                href={url}
-                                title={`${title} site`}
-                                icon="link"
+                                href={github}
+                                title={`${title} Github repository`}
+                                icon="github"
                             />
-                            {github && (
-                                <ItemLink
-                                    href={github}
-                                    title={`${title} Github repository`}
-                                    icon="github"
-                                />
-                            )}
-                        </div>
+                        )}
                     </div>
                     <div className="portfolio-item__text" dangerouslySetInnerHTML={{ __html: this.generateCopyMarkup() }}>
                     </div>

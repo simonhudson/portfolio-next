@@ -39,9 +39,10 @@
 }
 
 .portfolio-item__img {
+	@include width-full();
 	
 	@include media(tablet-p) {
-	    @include width-full();
+		@include width-half();
 	}
 	
 	img {
@@ -69,12 +70,14 @@
 
 .portfolio-item__content {
 	@include padding-y();
+	@include width-full();
 	display: flex;
 	flex-direction: column;
 	
 	@include media(tablet-p) {
 		@include no-padding();
 	    @include padding-l-lg();
+		@include width-half();
 	}
 	
 	.portfolio-item:nth-of-type(2n) & {
@@ -112,7 +115,8 @@
 }
 
 .portfolio-item__links {
-	@include padding-y-xsm();
+	@include padding-t-xsm();
+	@include padding-b-sm();
 	display: flex;
 	
 	@include media(tablet-p) {
