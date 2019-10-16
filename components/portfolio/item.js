@@ -56,11 +56,11 @@ class Item extends Component {
         return (
             <div className={`portfolio-item`}>
                 <div className="portfolio-item__img">
-                    <img alt="View project (opens in a new tab/window)" src="http://placehold.it/350x150" />
+                    <img alt={`Screen grab of ${title} project`} src="http://placehold.it/350x150" />
                 </div>
                 <div className="portfolio-item__content">
                     <div className="portfolio-item__info">
-                        <h2 className="portfolio-item__title">{props.title}</h2>
+                        <h2 className="portfolio-item__title">{title}</h2>
                         {this.renderMadeWith()}
                     </div>
                     <div className="portfolio-item__links">
