@@ -20,23 +20,6 @@ class Item extends Component {
         return paragraphs.join(' ');
     }
 
-    renderMadeWith = () => {
-        return (
-            <ul className="portfolio-item__made-with">				
-                {this.props.madeWith.map((item, index) => <li key={index}>{item}</li>)}
-            </ul>
-        );
-    };
-    
-    renderGitHub = () => {
-        if (!this.props.github) return null;
-        return (
-            <a className="btn--primary--hollow portfolio-item__link" href={`http://www.github.com/simonhudson/${this.props.github}`} rel="noopener noreferrer" target="_blank">
-                View <span className="visually-hidden">{this.props.title}</span> on Github
-            </a>
-        );
-    };
-
     render = () => {
         
         const { props } = this;
@@ -60,8 +43,11 @@ class Item extends Component {
                 </div>
                 <div className="portfolio-item__content">
                     <div className="portfolio-item__info">
-                        <h2 className="portfolio-item__title">{title}</h2>
-                        {this.renderMadeWith()}
+                        <h3 className="portfolio-item__title">{title}</h3>
+                        <h4 className="visually-hidden">Made with:</h4>
+                        <ul className="portfolio-item__made-with">				
+                            {madeWith.map((item, index) => <li key={index}>{item}</li>)}
+                        </ul>
                     </div>
                     <div className="portfolio-item__links">
                         <ItemLink
