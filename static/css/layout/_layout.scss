@@ -1,5 +1,8 @@
+$body-border: 6px solid palette(primary, b);
+
 body {
-	border-top: 6px solid palette(primary, b);
+	border-top: $body-border;
+	border-bottom: $body-border;
 }
 
 .wrap {

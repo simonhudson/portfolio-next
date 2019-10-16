@@ -42,6 +42,7 @@
 	
 	@include media(tablet-p) {
 		@include h4();
+		@include margin-b-lg();
 	}
 	
 	span:first-of-type {

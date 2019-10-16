@@ -20,7 +20,7 @@
 @mixin band() {
 	@include padding-y-lg();
 	@include width-full();
-	background: #f9f9f9;
+	background: palette(primary, band-background);
 	
 	@include media(tablet-l) {
 	    @include padding-y-xlg();
