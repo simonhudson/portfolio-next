@@ -39,7 +39,6 @@
 
 .banner__title {
 	@include h6();
-	opacity: 0.75;
 	
 	@include media(tablet-p) {
 		@include h4();
