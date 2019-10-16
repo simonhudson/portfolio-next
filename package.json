@@ -21,7 +21,7 @@
     },
     "homepage": "https://github.com/simonhudson/portfolio-next#readme",
     "dependencies": {
-        "@svgr/webpack": "^4.3.2",
+        "@svgr/webpack": "^4.3.3",
         "@zeit/next-sass": "^1.0.1",
         "express": "^4.17.1",
         "lodash": "^4.17.15",
