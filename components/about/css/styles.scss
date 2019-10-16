@@ -1,6 +1,7 @@
 @import 'static/css/styles';
 
 .about {
+	@include padding-y();
 	@include width-full();
 }
 

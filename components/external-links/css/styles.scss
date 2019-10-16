@@ -1,15 +1,12 @@
 @import 'static/css/styles';
 
 .external-links {
+	@include width-full();
 	list-style: none;
 }
 
-.external-links__item {
-	display: inline;
-}
-
 .external-links__item:not(:last-of-type) {
-	@include margin-r-lg();
+	@include margin-b();
 }
 
 .external-links__link {
@@ -29,7 +26,7 @@
 .external-links__link-text {
 	@include margin-l();
 	@include strong();
-	@include visually-hidden();
+	@include uppercase();
 	font-size: rem($base-font-size);
 	vertical-align: middle;
 }

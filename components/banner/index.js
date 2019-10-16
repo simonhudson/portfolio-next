@@ -1,7 +1,6 @@
 'use strict';
 
 import React from 'react';
-import ExternalLinks from 'components/external-links';
 import './css/styles.scss';
 
 const scrollToAbout = e => {

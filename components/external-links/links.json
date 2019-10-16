@@ -1,5 +1,10 @@
 [
 	{
+		"href": "./Simon_Hudson_CV.pdf",
+		"icon": "file-o",
+		"CTAText": "Download my CV"
+	},
+	{
 		"href": "https://github.com/simonhudson",
 		"icon": "github",
 		"CTAText": "Github profile"
@@ -8,10 +13,5 @@
 		"href": "https://stackoverflow.com/story/simonhudson",
 		"icon": "stack-overflow",
 		"CTAText": "Stack Overflow"
-	},
-	{
-		"href": "./Simon_Hudson_CV.pdf",
-		"icon": "file-o",
-		"CTAText": "Download my CV"
 	}
 ]
