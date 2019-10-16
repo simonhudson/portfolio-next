@@ -57,7 +57,7 @@ class Item extends Component {
                         />
                         {github && (
                             <ItemLink
-                                href={github}
+                                href={`https://github.com/simonhudson/${github}`}
                                 title={`${title} Github repository`}
                                 icon="github"
                             />
