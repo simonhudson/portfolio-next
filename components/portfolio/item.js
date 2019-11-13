@@ -50,11 +50,13 @@ class Item extends Component {
                         </ul>
                     </div>
                     <div className="portfolio-item__links">
-                        <ItemLink
-                            href={url}
-                            title={`${title} site`}
-                            icon="link"
-                        />
+                        {url && (
+                            <ItemLink
+                                href={url}
+                                title={`${title} site`}
+                                icon="link"
+                            />
+                        )}
                         {github && (
                             <ItemLink
                                 href={`https://github.com/simonhudson/${github}`}
