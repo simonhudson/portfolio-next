@@ -4,9 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "nodemon --exec \"next build && next start\"",
         "build": "next build",
         "start": "next start -p $PORT",
+        "start:dev": "nodemon --exec \"next build && next start\"",
         "heroku-postbuild": "npm run build",
         "test": "jest"
     },
