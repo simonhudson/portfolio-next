@@ -15,7 +15,7 @@
         "slug": "football-data",
         "title": "Football Data",
         "text": [
-            "Making use of the open football-data.org API, this application retrieves data for a specified club, offering users the opportunity to review their club's recent results, upcoming fixtures, squad and more."
+            "Making use of the open <a href=\"https://www.football-data.org\" rel=\"noopener noreferrer\" target=\"_blank\">football-data.org</a> API, this application retrieves data for a specified club, offering users the opportunity to review their club's recent results, upcoming fixtures, squad and more."
         ],
         "github" : "football-data",
         "madeWith": [
