@@ -4,7 +4,7 @@
 	@include padding-y();
 	display: flex;
 	flex-wrap: wrap;
-	
+
 	@include media(tablet-p) {
 	    @include padding-y-lg();
 	}
@@ -12,39 +12,43 @@
 
 .portfolio__wrap {
 	@include padding-x();
-	
+
 	@include media(tablet-p) {
 	    @include no-padding();
 	}
-	
+
 }
 
 .portfolio-item {
-	@include padding-b();
+	@include box-shadow();
+	@include padding();
+	@include margin-b();
 	@include width-full();
+	background: palette(primary, white);
 	display: flex;
 	flex-direction: column;
-	
+
 	@include media(tablet-p) {
-	    @include padding-b-xlg();
+	    @include padding-lg();
+		@include margin-b-lg();
 		flex-direction: row;
-		
+
 		&:nth-of-type(2n) {
 			flex-direction: row-reverse;
 		}
-		
+
 	}
-	
-	
+
+
 }
 
 .portfolio-item__img {
 	@include width-full();
-	
+
 	@include media(tablet-p) {
 		@include width-half();
 	}
-	
+
 	img {
 		@include margin-b-xsm();
 		@include width-full();
@@ -73,20 +77,20 @@
 	@include width-full();
 	display: flex;
 	flex-direction: column;
-	
+
 	@include media(tablet-p) {
 		@include no-padding();
 	    @include padding-l-lg();
 		@include width-half();
 	}
-	
+
 	.portfolio-item:nth-of-type(2n) & {
-		
+
 		@include media(tablet-p) {
 			@include no-padding();
 			@include padding-r-lg();
 		}
-		
+
 	}
 }
 
@@ -94,7 +98,7 @@
 	@include no-margin();
 	@include margin-b();
 	list-style: none;
-	
+
 	li {
 		@include margin-b-xsm();
 		@include sans-serif();
@@ -103,11 +107,11 @@
 
 		&:not(:last-of-type) {
 			@include margin-r-xsm();
-			
+
 			&:after {
 				content: ',';
 			}
-			
+
 		}
 
 	}
@@ -118,26 +122,26 @@
 	@include padding-t-xsm();
 	@include padding-b-sm();
 	display: flex;
-	
+
 	@include media(tablet-p) {
 		display: flex;
 	}
-	
+
 }
 
 .portfolio-item__link {
 	@include margin-r();
-	
+
 	@include media(tablet-p) {
 
 		&:last-of-type {
 			margin-right: 0;
 		}
-	
+
 	}
-	
+
 	.fa {
 		font-size: rem($base-font-size * 1.6);
 	}
-	
+
 }
