@@ -1,24 +1,22 @@
 'use strict';
 
 import React from 'react';
-import { expect as chaiExpect } from 'chai';
 import { shallow } from 'enzyme';
-import cloneDeep from 'lodash/cloneDeep';
+import { expect } from 'chai';
 import NewTabWarning from './index';
 
 describe('NewTabWarning', () => {
-    
+
     let objectUnderTest;
-    
-	afterEach(() => if (objectUnderTest) objectUnderTest.unmount());
-    
+	const selector = `[data-test="new-tab-warning"]`;
+
     it('should render as expected', () => {
         initialise();
-        chaiExpect(objectUnderTest.html()).to.not.be.null;
+        expect(objectUnderTest.html()).to.not.be.null;
+        expect(objectUnderTest.exists(selector)).to.be.true;
+        expect(objectUnderTest.find(selector).length).to.equal(1);
     });
 
-});
+    const initialise = () => objectUnderTest = shallow(<NewTabWarning />);
 
-const initialise = () => {
-    objectUnderTest = shallow(<NewTabWarning />);
-};
+});
