@@ -44,7 +44,7 @@
         "chai": "^4.2.0",
         "enzyme": "^3.10.0",
         "jest": "^24.9.0",
-        "nodemon": "^1.19.4",
+        "nodemon": "^2.0.0",
         "react-test-renderer": "^16.12.0"
     }
 }
