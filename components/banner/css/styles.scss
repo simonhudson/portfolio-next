@@ -3,13 +3,13 @@
 .banner {
 	display: flex;
 	flex-direction: column;
-	
+
 	@include media(tablet-p) {
 		align-items: center;
 		flex-direction: row;
 		justify-content: space-between;
 	}
-	
+
 }
 
 .banner__primary,
@@ -21,11 +21,11 @@
 	@include padding();
 	background: url('../../../static/imgs/double-quotations.svg') 0 0 no-repeat;
 	background-size: 100px auto;
-	
+
 	@include media(tablet-l) {
 		width: calc(100% / 4 * 3);
 	}
-	
+
 }
 
 .banner__secondary {
@@ -34,27 +34,29 @@
 		@include padding-l();
 		width: calc(100% / 4 * 1);
 	}
-		
+
 }
 
 .banner__title {
 	@include h6();
-	
+	font-size: rem($base-font-size);
+
 	@include media(tablet-p) {
 		@include h4();
-		@include margin-b-lg();
+		@include margin-b();
 	}
-	
+
 	span:first-of-type {
 		@include h3();
 		display: block;
-		
+		font-size: rem($base-font-size * 1.4);
+
 		@include media(tablet-p) {
 		    @include h1();
 		}
-		
+
 	}
-	
+
 }
 
 .banner__img {

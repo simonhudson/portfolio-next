@@ -9,8 +9,25 @@ const setContextClass = context => {
 	return '';
 };
 
+const scrollToTop = e => {
+	e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+	const targetElement = document.getElementById('top');
+	if (!targetElement) return;
+	targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
 const SiteLogo = props => {
-	
+
+	if (props.context === 'footer') {
+		return (
+			<>
+				<a href="#" onClick={((e) => scrollToTop(e))}>
+					<img alt="" className={`site-logo ${setContextClass(props.context)}`} src={logo} />
+				</a>
+			</>
+		)
+	}
+
 	return (
 		<img alt="" className={`site-logo ${setContextClass(props.context)}`} src={logo} />
 	);

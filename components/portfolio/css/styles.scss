@@ -6,8 +6,9 @@
 	flex-wrap: wrap;
 
 	@include media(tablet-p) {
-	    @include padding-y-lg();
+	    @include no-padding();
 	}
+	
 }
 
 .portfolio__wrap {
@@ -20,6 +21,7 @@
 }
 
 .portfolio-item {
+	@include border-radius();
 	@include box-shadow();
 	@include padding();
 	@include margin-b();

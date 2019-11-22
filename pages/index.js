@@ -10,8 +10,8 @@ import SiteFooter from 'components/site-footer';
 import 'static/css/styles.scss';
 
 export default () => (
-	
-	<html lang="en">
+
+	<html id="top" lang="en">
 		<Head>
 			<title>Web Design &amp; Development by Simon Hudson</title>
 			<meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -26,5 +26,5 @@ export default () => (
 			<SiteFooter />
 		</body>
 	</html>
-	
+
 );
