@@ -30,7 +30,7 @@ const Item = props => {
 	return (
 		<div className={`portfolio-item`}>
 			<div className="portfolio-item__img">
-				<img alt={`Screen grab of ${title} project`} src="http://placehold.it/350x150" />
+				<img alt={`Screen grab of ${title} project`} src={`../../../static/imgs/${slug}.png`} />
 			</div>
 			<div className="portfolio-item__content">
 				<div className="portfolio-item__info">
