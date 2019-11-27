@@ -36,11 +36,6 @@ const Item = props => {
 			<div className="portfolio-item__content">
 				<div className="portfolio-item__info">
 					<h3 className="portfolio-item__title">{title}</h3>
-					<h4 className="visually-hidden">Made with:</h4>
-					{date && (<span className="portfolio-item__date">{date}</span>)}
-					<ul className="portfolio-item__made-with">
-						{madeWith.map((item, index) => <li key={index}>{item}</li>)}
-					</ul>
 				</div>
 				<div className="portfolio-item__links">
 					{url && (
@@ -60,6 +55,20 @@ const Item = props => {
 				</div>
 				<div className="portfolio-item__text" dangerouslySetInnerHTML={{ __html: generateCopyMarkup() }}>
 				</div>
+				{date && (
+					<div className="portfolio-item__meta portfolio-item__date">
+						<h4 className="portfolio-item__meta-title">Date&nbsp;</h4>
+						<span>{date}</span>
+					</div>
+				)}
+				{madeWith && (
+					<div className="portfolio-item__meta portfolio-item__made-with">
+						<h4 className="portfolio-item__meta-title">Made with&nbsp;</h4>
+						<ul>
+							{madeWith.map((item, index) => <li key={index}>{item}</li>)}
+						</ul>
+					</div>
+				)}
 			</div>
 		</div>
 	);

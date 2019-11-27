@@ -60,7 +60,7 @@
 		@include media(tablet-p) {
 		    @include border-radius();
 		}
-		
+
 	}
 
 }
@@ -102,21 +102,22 @@
 }
 
 .portfolio-item__made-with {
-	@include no-margin();
-	@include margin-b();
-	list-style: none;
 
-	li {
-		@include margin-b-xsm();
-		@include sans-serif();
-		color: rgba(palette(primary, bodyText), .75);
-		display: inline-block;
+	ul {
+		@include no-margin();
+		list-style: none;
 
-		&:not(:last-of-type) {
-			@include margin-r-xsm();
+		li {
+			@include text-small();
+			display: inline-block;
 
-			&:after {
-				content: ',';
+			&:not(:last-of-type) {
+				@include margin-r-xsm();
+
+				&:after {
+					content: ',';
+				}
+
 			}
 
 		}
@@ -151,4 +152,29 @@
 		font-size: rem($base-font-size * 1.6);
 	}
 
+}
+
+.portfolio-item__date {
+	@include text-small();
+
+	span:nth-of-type(2) {
+		color: rgba(palette(primary, bodyText), .75);
+	}
+
+}
+
+.portfolio-item__meta {
+	opacity: 0.75;
+
+	&:not(:last-of-type) {
+		@include padding-b-sm();
+	}
+
+}
+
+.portfolio-item__meta-title {
+	@include sans-serif();
+	@include strong();
+	@include no-margin();
+	@include text-small();
 }
