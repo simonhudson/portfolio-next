@@ -10,6 +10,7 @@ const Item = props => {
 	const {
 		date,
 		github,
+		index,
 		madeWith,
 		omit,
 		omitText,
@@ -29,7 +30,7 @@ const Item = props => {
     };
 
 	return (
-		<div className="portfolio-item">
+		<div className={`portfolio-item ${index === 0 ? 'active' : ''}`}>
 			<div className="portfolio-item__inner">
 				<div className="portfolio-item__content">
 					<div className="portfolio-item__info">

@@ -24,8 +24,15 @@
 	@include border-radius();
 	@include box-shadow();
 	@include margin-b();
+	@include transition();
 	@include width-full();
 	background: palette(primary, white);
+	opacity: 0;
+	transform:translateX(-30%);
+
+	&:nth-of-type(2n) {
+		transform:translateX(30%);
+	}
 
 	@include media(tablet-p) {
 		@include margin-b-lg();
@@ -47,6 +54,11 @@
 
 		}
 
+	}
+
+	&.active {
+		opacity: 1;
+		transform:translateX(0%);
 	}
 
 }
