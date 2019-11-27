@@ -8,6 +8,7 @@ const Item = props => {
 	if (!props) return null;
 
 	const {
+		date,
 		github,
 		madeWith,
 		omit,
@@ -36,6 +37,7 @@ const Item = props => {
 				<div className="portfolio-item__info">
 					<h3 className="portfolio-item__title">{title}</h3>
 					<h4 className="visually-hidden">Made with:</h4>
+					{date && (<span className="portfolio-item__date">{date}</span>)}
 					<ul className="portfolio-item__made-with">
 						{madeWith.map((item, index) => <li key={index}>{item}</li>)}
 					</ul>

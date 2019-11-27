@@ -9,7 +9,8 @@
         "madeWith": [
             "JavaScript (ES6)",
             "Yeoman"
-        ]
+        ],
+        "date": "2019"
     },
     {
         "slug": "football-data",
@@ -23,7 +24,8 @@
             "React",
             "Jest",
             "Sass"
-        ]
+        ],
+        "date": "2019"
     },
     {
         "slug": "experian-marketplace",
@@ -43,7 +45,8 @@
             "Vue",
             "Amazon Web Services",
             "Mocha/Chai/Jest"
-        ]
+        ],
+        "date": "2016 — present"
     },
     {
         "slug": "experian-credit-expert",
@@ -60,7 +63,8 @@
             "JavaScript/jQuery",
             "Angular",
             "Swig"
-        ]
+        ],
+        "date": "2014 — 2015"
     },
     {
         "slug": "lastfm",
@@ -76,7 +80,8 @@
             "CSS",
             "JavaScript/jQuery",
             "Last.fm API"
-        ]
+        ],
+        "date": "2015"
     },
     {
         "slug": "gov-petitions",
@@ -93,7 +98,8 @@
             "JavaScript/jQuery",
             "KnockoutJS",
             "Government API"
-        ]
+        ],
+        "date": "2015"
     },
     {
         "slug": "nhs-choices",
@@ -109,7 +115,8 @@
             "JavaScript/jQuery",
             "Sharepoint",
             ".NET"
-        ]
+        ],
+        "date": "2009 — 2013"
     },
     {
         "slug": "nhs-choices-pims",
@@ -127,7 +134,8 @@
             "JavaScript/jQuery",
             ".NET",
             "Sharepoint"
-        ]
+        ],
+        "date": "2009 — 2013"
     },
     {
         "slug": "nhs-choices-media-library",
@@ -145,7 +153,8 @@
             "BEML",
             ".NET",
             "Sharepoint"
-        ]
+        ],
+        "date": "2009 — 2013"
     },
     {
         "slug": "dept-health-summer-campaign",
@@ -162,6 +171,7 @@
             ".NET",
             "Sharepoint"
         ],
+        "date": "2009 — 2013",
         "omit": true
     },
     {
@@ -180,6 +190,7 @@
             "MySQL",
             "Photoshop"
         ],
+        "date": "2010",
         "omit": true
     },
     {
@@ -198,6 +209,7 @@
             "PHP",
             "Photoshop",
             "Illustrator"
-        ]
+        ],
+        "date": "2005"
     }
 ]
