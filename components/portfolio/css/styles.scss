@@ -23,7 +23,6 @@
 .portfolio-item {
 	@include border-radius();
 	@include box-shadow();
-	@include padding();
 	@include margin-b();
 	@include width-full();
 	background: palette(primary, white);
@@ -53,10 +52,15 @@
 
 	img {
 		@include border();
-		@include border-radius();
+		@include border-radius(5px, 5px, 0, 0);
 		@include margin-b-xsm();
 		@include width-full();
 		height: auto;
+
+		@include media(tablet-p) {
+		    @include border-radius();
+		}
+		
 	}
 
 }
@@ -76,7 +80,7 @@
 }
 
 .portfolio-item__content {
-	@include padding-y();
+	@include padding();
 	@include width-full();
 	display: flex;
 	flex-direction: column;
