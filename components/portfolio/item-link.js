@@ -10,9 +10,9 @@ const ItemLink = props => {
 
 	return (
 		<a className="portfolio-item__link" href={props.href} rel="noopener noreferrer" target="_blank">
+			<Icon type={props.icon} />
 			<span className="visually-hidden">View {props.title}</span>
 			<NewTabWarning />
-			<Icon type={props.icon} />
 		</a>
 	);
 

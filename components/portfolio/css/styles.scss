@@ -33,7 +33,7 @@
 		&:nth-of-type(2n) {
 
 			.portfolio-item__inner {
-				flex-direction: row-reverse;
+				flex-direction: row;
 			}
 
 			.portfolio-item__content {
@@ -57,7 +57,7 @@
 
 	@include media(tablet-p) {
 	    @include padding-lg();
-		flex-direction: row;
+		flex-direction: row-reverse;
 	}
 
 }

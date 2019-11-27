@@ -31,12 +31,11 @@ const Item = props => {
 	return (
 		<div className="portfolio-item">
 			<div className="portfolio-item__inner">
-				<div className="portfolio-item__img">
-					<img alt={`Screen grab of ${title} project`} src={`../../../static/imgs/${slug}.png`} />
-				</div>
 				<div className="portfolio-item__content">
 					<div className="portfolio-item__info">
 						<h3 className="portfolio-item__title">{title}</h3>
+					</div>
+					<div className="portfolio-item__text" dangerouslySetInnerHTML={{ __html: generateCopyMarkup() }}>
 					</div>
 					<div className="portfolio-item__links">
 						{url && (
@@ -54,8 +53,9 @@ const Item = props => {
 							/>
 						)}
 					</div>
-					<div className="portfolio-item__text" dangerouslySetInnerHTML={{ __html: generateCopyMarkup() }}>
-					</div>
+				</div>
+				<div className="portfolio-item__img">
+					<img alt={`Screen grab of ${title} project`} src={`../../../static/imgs/${slug}.png`} />
 				</div>
 			</div>
 			<div className="portfolio-item__meta-wrap">
