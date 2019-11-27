@@ -33,7 +33,7 @@ class Portfolio extends Component {
         this.state.portfolioItems.forEach((item, index) => {
             const itemHeight = item.getBoundingClientRect().height;
             const itemOffsetTop = item.offsetTop;
-            const slideInAt = (window.scrollY + window.innerHeight) - itemHeight / 4;
+            const slideInAt = (window.scrollY + window.innerHeight) - itemHeight / 8;
             const itemBottom = itemOffsetTop + itemHeight;
             const isHalfShown = slideInAt > itemOffsetTop;
             const isNotScrolledPast = window.scrollY < itemBottom;
