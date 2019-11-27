@@ -29,32 +29,36 @@ const Item = props => {
     };
 
 	return (
-		<div className={`portfolio-item`}>
-			<div className="portfolio-item__img">
-				<img alt={`Screen grab of ${title} project`} src={`../../../static/imgs/${slug}.png`} />
+		<div className="portfolio-item">
+			<div className="portfolio-item__inner">
+				<div className="portfolio-item__img">
+					<img alt={`Screen grab of ${title} project`} src={`../../../static/imgs/${slug}.png`} />
+				</div>
+				<div className="portfolio-item__content">
+					<div className="portfolio-item__info">
+						<h3 className="portfolio-item__title">{title}</h3>
+					</div>
+					<div className="portfolio-item__links">
+						{url && (
+							<ItemLink
+								href={url}
+								title={`${title} site`}
+								icon="link"
+							/>
+						)}
+						{github && (
+							<ItemLink
+								href={`https://github.com/simonhudson/${github}`}
+								title={`${title} Github repository`}
+								icon="github"
+							/>
+						)}
+					</div>
+					<div className="portfolio-item__text" dangerouslySetInnerHTML={{ __html: generateCopyMarkup() }}>
+					</div>
+				</div>
 			</div>
-			<div className="portfolio-item__content">
-				<div className="portfolio-item__info">
-					<h3 className="portfolio-item__title">{title}</h3>
-				</div>
-				<div className="portfolio-item__links">
-					{url && (
-						<ItemLink
-							href={url}
-							title={`${title} site`}
-							icon="link"
-						/>
-					)}
-					{github && (
-						<ItemLink
-							href={`https://github.com/simonhudson/${github}`}
-							title={`${title} Github repository`}
-							icon="github"
-						/>
-					)}
-				</div>
-				<div className="portfolio-item__text" dangerouslySetInnerHTML={{ __html: generateCopyMarkup() }}>
-				</div>
+			<div className="portfolio-item__meta-wrap">
 				{date && (
 					<div className="portfolio-item__meta portfolio-item__date">
 						<h4 className="portfolio-item__meta-title">Date&nbsp;</h4>
