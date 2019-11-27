@@ -53,7 +53,7 @@
 
 .portfolio-item__inner {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 
 	@include media(tablet-p) {
 	    @include padding-lg();
@@ -90,7 +90,6 @@
 
 .portfolio-item__title {
 	@include no-margin();
-	@include padding-b-sm();
 	@include sans-serif();
 	@include strong();
 	@include uppercase();
