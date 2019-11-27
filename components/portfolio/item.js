@@ -59,20 +59,22 @@ const Item = props => {
 				</div>
 			</div>
 			<div className="portfolio-item__meta-wrap">
-				{date && (
-					<div className="portfolio-item__meta portfolio-item__date">
-						<h4 className="portfolio-item__meta-title">Date&nbsp;</h4>
-						<span>{date}</span>
-					</div>
-				)}
-				{madeWith && (
-					<div className="portfolio-item__meta portfolio-item__made-with">
-						<h4 className="portfolio-item__meta-title">Made with&nbsp;</h4>
-						<ul>
-							{madeWith.map((item, index) => <li key={index}>{item}</li>)}
-						</ul>
-					</div>
-				)}
+				<div className="portfolio-item__meta-inner">
+					{date && (
+						<div className="portfolio-item__meta portfolio-item__date">
+							<h4 className="portfolio-item__meta-title">Date&nbsp;</h4>
+							<span>{date}</span>
+						</div>
+					)}
+					{madeWith && (
+						<div className="portfolio-item__meta portfolio-item__made-with">
+							<h4 className="portfolio-item__meta-title">Made with&nbsp;</h4>
+							<ul>
+								{madeWith.map((item, index) => <li key={index}>{item}</li>)}
+							</ul>
+						</div>
+					)}
+				</div>
 			</div>
 		</div>
 	);

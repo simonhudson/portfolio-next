@@ -29,6 +29,24 @@
 
 	@include media(tablet-p) {
 		@include margin-b-lg();
+
+		&:nth-of-type(2n) {
+
+			.portfolio-item__inner {
+				flex-direction: row-reverse;
+			}
+
+			.portfolio-item__content {
+				@include no-padding();
+				@include padding-r-lg();
+			}
+
+			.portfolio-item__meta-wrap {
+				justify-content: flex-start;
+			}
+
+		}
+
 	}
 
 }
@@ -40,11 +58,6 @@
 	@include media(tablet-p) {
 	    @include padding-lg();
 		flex-direction: row;
-
-		&:nth-of-type(2n) {
-			flex-direction: row-reverse;
-		}
-
 	}
 
 }
@@ -97,14 +110,6 @@
 		@include width-half();
 	}
 
-	.portfolio-item:nth-of-type(2n) & {
-
-		@include media(tablet-p) {
-			@include no-padding();
-			@include padding-r-lg();
-		}
-
-	}
 }
 
 .portfolio-item__made-with {
@@ -175,8 +180,20 @@
 	background: palette(primary, band-background);
 
 	@include media(tablet-p) {
-	    @include padding-lg();
+		@include no-padding();
+	    @include padding-y-lg();
 		display: flex;
+		justify-content: flex-end;
+	}
+
+}
+
+.portfolio-item__meta-inner {
+
+	@include media(tablet-p) {
+		@include padding-x-lg();
+		display: flex;
+		width: 50%;
 	}
 
 }
@@ -196,6 +213,14 @@
 			@include border-r();
 			@include padding-r();
 			@include margin-r();
+		}
+
+	}
+
+	&:last-of-type {
+
+		@include media(tablet-p) {
+			max-width: 66%;
 		}
 
 	}
