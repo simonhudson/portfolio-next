@@ -52,7 +52,8 @@
 	}
 
 	img {
-		@include box-shadow();
+		@include border();
+		@include border-radius();
 		@include margin-b-xsm();
 		@include width-full();
 		height: auto;

@@ -179,7 +179,8 @@
             "PHP",
             "MySQL",
             "Photoshop"
-        ]
+        ],
+        "omit": true
     },
     {
         "slug": "nucleus-change",

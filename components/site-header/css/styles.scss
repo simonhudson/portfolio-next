@@ -9,6 +9,10 @@
 	flex-wrap: wrap;
 }
 
+.site-header__wrap {
+	background: palette(primary, white);
+}
+
 .site-header__strap {
 	@include no-margin();
 	@include sans-serif();
