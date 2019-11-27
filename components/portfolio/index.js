@@ -5,7 +5,7 @@ import Item from './item';
 import data from './portfolio.json';
 import './css/styles.scss';
 
-const debounce = (func, wait = 20, immediate = true) => {
+const debounce = (func, wait = 10, immediate = true) => {
     var timeout;
     return function() {
         var context = this, args = arguments;
