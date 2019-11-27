@@ -3,7 +3,7 @@ $body-border: 6px solid palette(primary, b);
 body {
 	border-top: $body-border;
 	border-bottom: $body-border;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 .wrap {
