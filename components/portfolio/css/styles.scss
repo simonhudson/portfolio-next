@@ -82,13 +82,14 @@
 	}
 
 	img {
-		@include border();
+		@include border-b();
 		@include border-radius(5px, 5px, 0, 0);
 		@include margin-b-xsm();
 		@include width-full();
 		height: auto;
 
 		@include media(tablet-p) {
+			@include border();
 		    @include border-radius();
 		}
 
