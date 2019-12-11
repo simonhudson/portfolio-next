@@ -3,10 +3,12 @@
 .banner {
 	display: flex;
 	flex-direction: column;
+	height: 100vh;
 
 	@include media(tablet-p) {
 		align-items: center;
 		flex-direction: row;
+		height: auto;
 		justify-content: space-between;
 	}
 
