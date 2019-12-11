@@ -45,6 +45,16 @@
 
 }
 
+@mixin divider-center($width: 1px) {
+	@include divider($width);
+
+	&:after {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
 @mixin full-viewport-height() {
 	height: 100vh;
 	max-height: 100vh;

@@ -3,3 +3,7 @@ p {
 	line-height: $base-line-height;
 	margin-bottom: rem($base-font-size * 1.6);
 }
+
+strong {
+	@include strong();
+}
