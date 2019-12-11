@@ -44,3 +44,8 @@
 	}
 
 }
+
+@mixin full-viewport-height() {
+	height: 100vh;
+	max-height: 100vh;
+}

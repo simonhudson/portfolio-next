@@ -6,5 +6,6 @@
 		"components/",
 		"pages/",
 		"static/"
-	]
+	],
+	"ext": "js css html scss"
 }

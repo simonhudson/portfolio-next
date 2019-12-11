@@ -2,7 +2,14 @@
 
 .external-links {
 	@include width-full();
+	display: flex;
+	justify-content: space-evenly;
 	list-style: none;
+
+	@include media(tablet-p) {
+	    justify-content: left;
+	}
+	
 }
 
 .external-links__item {

@@ -3,13 +3,21 @@
 .banner {
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
 
 	@include media(tablet-p) {
 		align-items: center;
 		flex-direction: row;
 		height: auto;
 		justify-content: space-between;
+	}
+
+}
+
+.banner__outer {
+	height: 100vh;
+
+	@include media(tablet-p) {
+	    height: auto;
 	}
 
 }
@@ -41,9 +49,11 @@
 
 .banner__title {
 	@include h6();
-	font-size: rem($base-font-size);
+	@include text-center();
+	font-size: rem($base-font-size * 1.6);
 
 	@include media(tablet-p) {
+		@include text-left();
 		@include h4();
 		@include margin-b();
 	}
@@ -51,7 +61,7 @@
 	span:first-of-type {
 		@include h3();
 		display: block;
-		font-size: rem($base-font-size * 1.4);
+		font-size: rem($base-font-size * 2.6);
 
 		@include media(tablet-p) {
 		    @include h1();

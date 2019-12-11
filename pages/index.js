@@ -20,8 +20,10 @@ export default () => (
 			<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 		</Head>
 		<body>
-			<SiteHeader />
-			<Banner />
+			<div className="full-viewport-height">
+				<SiteHeader />
+				<Banner />
+			</div>
 			<Portfolio />
 			<SiteFooter />
 		</body>
