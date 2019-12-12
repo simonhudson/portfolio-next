@@ -2,6 +2,7 @@
     {
         "slug": "portfolio",
         "title": "Portfolio",
+        "client": "Personal",
         "text": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio lacinia, sollicitudin urna et, lacinia ex. Mauris malesuada tortor tristique dui eleifend luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at pellentesque augue, eu maximus orci. Vivamus in elit eu sem tincidunt sodales nec ac sapien"
         ],
@@ -16,6 +17,7 @@
     {
         "slug": "react-yeoman-generator",
         "title": "React Yeoman Generator",
+        "client": "Personal",
         "text": [
             "A Yeoman Generator which will scaffold a basic client-side React application, complete with a hand-rolled CSS framework, a selection of JavaScript utility functions and some boilerplate unit tests written using Jest."
         ],
@@ -29,6 +31,7 @@
     {
         "slug": "football-data",
         "title": "Football Data",
+        "client": "Personal",
         "text": [
             "Making use of the open <a href=\"https://www.football-data.org\" rel=\"noopener noreferrer\" target=\"_blank\">football-data.org</a> API, this application retrieves data for a specified club, offering users the opportunity to review their club's recent results, upcoming fixtures, squad and more."
         ],
@@ -44,6 +47,7 @@
     {
         "slug": "experian-marketplace",
         "title": "Experian Marketplace",
+        "client": "Experian",
         "text": [
             "Experian Marketplace offers users the chance to search the market for the Credit Cards, Loans and Mortgages which are right for them."
         ],
@@ -65,6 +69,7 @@
     {
         "slug": "experian-credit-expert",
         "title": "Experian CreditExpert",
+        "client": "Experian",
         "text": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio lacinia, sollicitudin urna et, lacinia ex. Mauris malesuada tortor tristique dui eleifend luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at pellentesque augue, eu maximus orci. Vivamus in elit eu sem tincidunt sodales nec ac sapien",
             "Fusce dapibus porttitor euismod. Fusce vel pharetra tortor. Pellentesque sit amet dapibus ante. Suspendisse consequat congue purus."
@@ -83,7 +88,7 @@
     {
         "slug": "lastfm",
         "title": "Last.fm",
-        "client": "Personal project",
+        "client": "Personal",
         "text": [
             "Making use of the <a href=\"http://www.last.fm/\" rel=\"noopener noreferrer\" target=\"_blank\">Last.fm</a> API, this tool simply provides a real-time display of a users' most recently played tracks, or their top artists of all time, based on track plays. This data is then displayed as thumbnails, which click through to the relevant track/artist page on the Last.fm website."
         ],
@@ -100,7 +105,7 @@
     {
         "slug": "gov-petitions",
         "title": "UK Government Petitions",
-        "client": "Personal project",
+        "client": "Personal",
         "text": [
             "An experiment using the publicly-accessible government petitions API. Petitions are searchable by ID, data is returned to the browser and displayed using the KnockoutJS framework. The API is polled periodically to give a real-time update of the number of signatories."
         ],
@@ -210,7 +215,7 @@
     {
         "slug": "nucleus-change",
         "title": "Nucleus Human Change Technologies",
-        "client": "Personal project",
+        "client": "Personal",
         "text": [
             "Nucleus Human Change Technologies approached me to help them design and build the website arm of a new branding campaign they were launching.",
             "The aim was to create a simple brochure site which would give an overview of the services they offer, as well as offering scope for expansion in the future.</p><p>They were keen to make the site as clean and fresh looking as possible, incorporating imagery and branding which was being used on their printed literature. The site also included multi-media elements in the form of an audio clip from one of their relaxation CD&#8217;s and a video excerpt from one of their presentations."

@@ -177,15 +177,6 @@
 
 }
 
-.portfolio-item__date {
-	@include text-small();
-
-	span:nth-of-type(2) {
-		color: rgba(palette(primary, bodyText), .75);
-	}
-
-}
-
 .portfolio-item__meta-wrap {
 	@include border-radius(0, 0, 5px, 5px);
 	@include padding();
@@ -211,7 +202,12 @@
 }
 
 .portfolio-item__meta {
+	@include text-small();
 	opacity: 0.75;
+
+	span:nth-of-type(2) {
+		color: rgba(palette(primary, bodyText), .75);
+	}
 
 	&:not(:last-of-type) {
 		@include border-b();
@@ -232,7 +228,7 @@
 	&:last-of-type {
 
 		@include media(tablet-p) {
-			max-width: 66%;
+			max-width: 59%;
 		}
 
 	}

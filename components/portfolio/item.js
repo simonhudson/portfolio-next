@@ -8,6 +8,7 @@ const Item = props => {
 	if (!props) return null;
 
 	const {
+		client,
 		date,
 		github,
 		index,
@@ -61,6 +62,12 @@ const Item = props => {
 			</div>
 			<div className="portfolio-item__meta-wrap">
 				<div className="portfolio-item__meta-inner">
+					{client && (
+						<div className="portfolio-item__meta portfolio-item__client">
+							<h4 className="portfolio-item__meta-title">Client&nbsp;</h4>
+							<span>{client}</span>
+						</div>
+					)}
 					{date && (
 						<div className="portfolio-item__meta portfolio-item__date">
 							<h4 className="portfolio-item__meta-title">Date&nbsp;</h4>
