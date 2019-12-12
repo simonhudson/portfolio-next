@@ -192,10 +192,11 @@
 }
 
 .portfolio-item__meta-inner {
+	display: flex;
+	flex-wrap: wrap;
 
 	@include media(tablet-p) {
 		@include padding-x-lg();
-		display: flex;
 		width: 50%;
 	}
 
@@ -213,6 +214,7 @@
 		@include border-b();
 		@include padding-b();
 		@include margin-b();
+		@include width-half();
 
 		@include media(tablet-p) {
 			@include no-border();
@@ -221,6 +223,7 @@
 			@include border-r();
 			@include padding-r();
 			@include margin-r();
+			width: auto;
 		}
 
 	}
