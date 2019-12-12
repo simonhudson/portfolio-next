@@ -78,7 +78,7 @@ const Item = props => {
 						<div className="portfolio-item__meta portfolio-item__made-with">
 							<h4 className="portfolio-item__meta-title">Made with&nbsp;</h4>
 							<ul>
-								{madeWith.map((item, index) => <li key={index}>{item}</li>)}
+								{madeWith.map((item, index) => <li key={index} dangerouslySetInnerHTML={{ __html: item }}></li>)}
 							</ul>
 						</div>
 					)}

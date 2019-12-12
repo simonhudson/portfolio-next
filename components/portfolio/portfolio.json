@@ -9,8 +9,7 @@
         "github" : "portfolio-next",
         "madeWith": [
             "Next.js",
-            "JavaScript (ES6)",
-            "Yeoman"
+            "Sass"
         ],
         "date": "2019"
     },

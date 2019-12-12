@@ -1,6 +1,7 @@
 @mixin text-link {
 	@include strong();
 	color: palette(primary, b);
+	font-size: inherit;
 	text-decoration: none;
 
 	&:hover,

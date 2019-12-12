@@ -1,10 +1,11 @@
 @mixin headings() {
 	@include serif();
 	@include semi-strong();
-	color: palette(primary, bodyText);
+	color: rgba(palette(primary, bodyText), .95);
 	line-height: 1.6em;
 	margin-bottom: 1rem;
 }
+
 @mixin strong-heading() {
 	font-weight: 700;
 }
