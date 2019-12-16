@@ -1,0 +1,12 @@
+@import 'static/css/mixins/animation';
+
+@keyframes fade-in {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.fade-in {
+    @include animation-defaults();
+    animation-name: fade-in;
+	animation-delay: 1s;
+}
