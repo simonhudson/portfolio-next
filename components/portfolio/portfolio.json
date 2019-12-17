@@ -122,7 +122,7 @@
     {
         "slug": "nhs-choices",
         "title": "NHS Choices",
-        "client": "Capita",
+        "client": "NHS Choices (Capita)",
         "text": [
             "Working on one of the largest websites in Europe, it was my responsibility to create front-end code to the highest standards and then liaise with the back-end developers to ensure it was integrated properly into the solution.</p><p>As a public health information site, accessibility was at the forefront of everything we did, and as such my knowledge of progressive enhancement & graceful degradation, assistive technologies and cross-browser compatibility was increased hugely, helped in no small part by regular contact with third parties, such as the <a href=\"http://www.rnib.org.uk/\" rel=\"noopener noreferrer\" target=\"_blank\">R.N.I.B</a> and <a href=\"https://www.abilitynet.org.uk/\" rel=\"noopener noreferrer\" target=\"_blank\">AbilityNet</a>."
         ],
@@ -139,7 +139,7 @@
     {
         "slug": "nhs-choices-pims",
         "title": "NHS Choices Provider Information Management System",
-        "client": "Capita",
+        "client": "NHS Choices (Capita)",
         "text": [
             "NHS Choices provided healthcare organisations (such as dentists, GPs and clinics) with an internal <abbr title=\"Content Management System\">CMS</abbr> through which they could update their profile on the NHS website.",
             "The profiles were built up of customisable modules, allowing organisations to add videos, news articles, registration information, opening times and numerous other details about their service.",
@@ -158,12 +158,12 @@
     {
         "slug": "nhs-choices-media-library",
         "title": "NHS Choices Media Library",
-        "client": "Capita",
+        "client": "NHS Choices (Capita)",
         "text": [
             "One of the largest pieces of work I was involved in whilst working for NHS Choices was the rebuild of the site&apos;s media library.",
             "As well as being solely responsible for the front-end development, I also had to very quickly familiarise myself with the technical aspects of the <a href=\"https://www.brightcove.com\" rel=\"noopener noreferrer\" target=\"_blank\">new media provider</a> we were switching to. This involved me learning their proprietary markup language, <abbr title=\"Brightcove Experience Markup Language\">BEML</abbr>, and also working with the back-end developers to make best use of their API."
         ],
-        "url" : "http://www.nhs.uk/video",
+        "url" : "https://www.nhs.uk/video/Pages/nhs-health-check-rashmis-story.aspx",
         "madeWith": [
             "HTML",
             "CSS",
@@ -177,7 +177,7 @@
     {
         "slug": "dept-health-summer-campaign",
         "title": "Department of Health Summer campaign",
-        "client": "Capita",
+        "client": "NHS Choices (Capita)",
         "text": [
             "Whilst working at NHS Choices, I was often part of the development team on campaign microsites for the Department of Health.",
             "This was a simple one-page site to encourage users to sign up for healthy living emails. Campaign sites were built using the same basic front-end framework, however during the development of this site, I made several accessibility improvements and streamlined some of the markup which not only provided benefits for this site, but also for future sites using the framework."
