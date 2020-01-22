@@ -22,7 +22,7 @@ const SiteLogo = props => {
 		return (
 			<>
 				<a href="#" onClick={((e) => scrollToTop(e))}>
-					<img alt="" className={`site-logo ${setContextClass(props.context)}`} src={logo} />
+					<img alt="Web Design &amp; Development by Simon Hudson" className={`site-logo ${setContextClass(props.context)}`} src={logo} />
 				</a>
 			</>
 		)
