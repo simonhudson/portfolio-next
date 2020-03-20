@@ -76,13 +76,31 @@
 
 .portfolio-item__img {
 	@include width-full();
+	position: relative;
 
 	@include media(tablet-p) {
 		@include width-half();
 	}
 
+	&:after {
+		@include position-bl(8px, 0);
+		@include width-full();
+		content: '';
+		display: block;
+		background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+		height: 30px;
+	}
+
+	@include media(tablet-p) {
+		
+		&:after {
+			display: none;
+		}
+
+	}
+
 	img {
-		@include border-b();
+		// @include border-b();
 		@include border-radius(5px, 5px, 0, 0);
 		@include margin-b-xsm();
 		@include width-full();
