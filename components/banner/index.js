@@ -12,7 +12,7 @@ const Banner = props => {
 				<div className="banner__primary">
 					<h1 className="banner__title">
 						<span>Hi there, my name's Simon.&nbsp;</span>
-						I am an experienced <strong>front-end developer</strong> who specialises in writing lean, standards-compliant <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong> to create <strong>accessible</strong> and <strong>usable</strong> websites.
+						I am an experienced <strong>front-end developer</strong> who specialises in writing lean, standards-compliant <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong> to create <strong>accessible</strong> and <strong>usable</strong> websites and applications.
 					</h1>
 					<ExternalLinks />
 				</div>
