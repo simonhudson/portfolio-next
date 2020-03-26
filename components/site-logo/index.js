@@ -5,33 +5,38 @@ import logo from './imgs/logo.svg';
 import './css/styles.scss';
 
 const setContextClass = context => {
-	if (context) return `site-logo--${context}`;
-	return '';
+    if (context) return `site-logo--${context}`;
+    return '';
 };
 
 const scrollToTop = e => {
-	e.preventDefault ? e.preventDefault() : (e.returnValue = false);
-	const targetElement = document.getElementById('top');
-	if (!targetElement) return;
-	targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+    const targetElement = document.getElementById('top');
+    if (!targetElement) return;
+    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
 };
 
 const SiteLogo = props => {
+    const markup = (
+        <img
+            data-test={`${setContextClass(props.context)}`}
+            alt=""
+            className={`site-logo ${setContextClass(props.context)}`}
+            src={logo}
+        />
+    );
 
-	if (props.context === 'footer') {
-		return (
-			<>
-				<a href="#" onClick={((e) => scrollToTop(e))}>
-					<img alt="Web Design &amp; Development by Simon Hudson" className={`site-logo ${setContextClass(props.context)}`} src={logo} />
-				</a>
-			</>
-		)
-	}
+    if (props.context === 'footer') {
+        return (
+            <>
+                <a href="#" onClick={e => scrollToTop(e)}>
+                    {markup}
+                </a>
+            </>
+        );
+    }
 
-	return (
-		<img alt="" className={`site-logo ${setContextClass(props.context)}`} src={logo} />
-	);
-
+    return markup;
 };
 
 export default SiteLogo;
