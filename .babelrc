@@ -15,7 +15,8 @@
                 "root": ["./"],
                 "alias": {
                     "components": "./components",
-                    "static": "./static"
+                    "static": "./static",
+                    "cypress": "./cypress"
                 }
             }
         ]
