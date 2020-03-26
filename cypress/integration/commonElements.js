@@ -1,8 +1,6 @@
 'use strict';
 
-import { openPage } from '../custom/commands';
-
-beforeEach(() => openPage('home'));
+beforeEach(() => cy.openPage('home'));
 
 describe('Common page elements', () => {
     it('Contains header', () =>
