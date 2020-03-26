@@ -9,7 +9,7 @@
         "start:dev": "nodemon --exec \"next build && next start\"",
         "heroku-postbuild": "npm run build",
         "test": "jest",
-        "test:e2e": "./node_modules/.bin/cypress open"
+        "test:e2e": "./node_modules/.bin/cypress run --browser chrome"
     },
     "repository": {
         "type": "git",
