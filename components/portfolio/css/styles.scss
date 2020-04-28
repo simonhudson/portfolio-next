@@ -215,7 +215,6 @@
 
 	@include media(tablet-p) {
 		@include padding-x-lg();
-		width: 50%;
 	}
 
 }
