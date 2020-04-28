@@ -28,12 +28,14 @@ export default () => (
             />
         </Head>
         <body className="fade-in" id="top">
-            <div className="full-viewport-height">
-                <SiteHeader />
-                <Banner />
-            </div>
-            <Portfolio />
-            <SiteFooter />
+            <main>
+                <div className="full-viewport-height">
+                    <SiteHeader />
+                    <Banner />
+                </div>
+                <Portfolio />
+                <SiteFooter />
+            </main>
         </body>
     </html>
 );
