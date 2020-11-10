@@ -19,7 +19,7 @@ const App = ({ Component, pageProps }) => {
         route: router.route,
     };
 
-    let pageTitle = 'Web Design &amp; Development by Simon Hudson';
+    let pageTitle = 'Web Design & Development by Simon Hudson';
 
     return (
         <>

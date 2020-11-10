@@ -1,8 +1,9 @@
 import React from 'react';
+import { Logo } from './index.styles';
 import logo from './logo.svg';
 
-const SiteLogo = (props) => {
-    return <img alt="" src={logo} />;
+const SiteLogo = () => {
+    return <Logo alt="" src={logo} />;
 };
 
 export default SiteLogo;

@@ -1,15 +1,20 @@
 import React from 'react';
-import { Wrapper, Strapline } from './index.styles';
+import { layout } from '~/theme';
+import { Wrapper, InnerWrap, Strapline } from './index.styles';
 import SiteLogo from '~/components/site-logo';
 
 const SiteHeader = () => {
     return (
         <Wrapper>
-            <SiteLogo />
-            <Strapline>
-                <span>Web Design &amp; Development by&nbsp;</span>
-                <span>Simon Hudson</span>
-            </Strapline>
+            <layout.Wrap>
+                <InnerWrap>
+                    <SiteLogo />
+                    <Strapline>
+                        <span>Web Design &amp; Development by&nbsp;</span>
+                        <span>Simon Hudson</span>
+                    </Strapline>
+                </InnerWrap>
+            </layout.Wrap>
         </Wrapper>
     );
 };

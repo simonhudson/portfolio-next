@@ -2,21 +2,25 @@ import styled from 'styled-components';
 import { rem } from 'polished';
 
 const Wrapper = styled.div`
-    align-items: center;
     background: ${({ theme }) => theme.palette.primary.white};
     border-top: ${rem(10)} solid ${({ theme }) => theme.palette.primary.b};
-    display: flex;
-    flex-wrap: wrap;
-    padding: ${rem(10)};
+    box-shadow: 0 0 5px #bbb;
+    padding: ${rem(10)} 0;
     width: 100%;
 
     ${({ theme }) =>
         theme.media(
             'tablet-p',
             `
-			    padding: ${rem(20)};
+			    padding: ${rem(20)} 0;
 			    `
         )};
+`;
+
+const InnerWrap = styled.div`
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
 `;
 
 const Strapline = styled.p`
@@ -44,4 +48,4 @@ const Strapline = styled.p`
     }
 `;
 
-export { Wrapper, Strapline };
+export { Wrapper, InnerWrap, Strapline };
