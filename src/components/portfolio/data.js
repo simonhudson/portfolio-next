@@ -1,5 +1,27 @@
 export default [
     {
+        slug: 'experian-offers-hub',
+        title: 'Experian Offers Hub',
+        client: 'Experian',
+        text: [
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio lacinia, sollicitudin urna et, lacinia ex. Mauris malesuada tortor tristique dui eleifend luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at pellentesque augue, eu maximus orci. Vivamus in elit eu sem tincidunt sodales nec ac sapien',
+        ],
+        url: 'https://offers.experian.co.uk',
+        madeWith: ['Next.js', 'Sass'],
+        date: '2019',
+    },
+    {
+        slug: 'experian-boost',
+        title: 'Experian Boost',
+        client: 'Experian',
+        text: [
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio lacinia, sollicitudin urna et, lacinia ex. Mauris malesuada tortor tristique dui eleifend luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at pellentesque augue, eu maximus orci. Vivamus in elit eu sem tincidunt sodales nec ac sapien',
+        ],
+        url: 'https://www.experian.co.uk/experian-account/boost.html',
+        madeWith: ['Next.js', 'Sass'],
+        date: '2019',
+    },
+    {
         slug: 'portfolio',
         title: 'Portfolio',
         client: 'Personal',
