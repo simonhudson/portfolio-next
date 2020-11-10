@@ -1,4 +1,4 @@
-'use strict';
+const cy = require('cypress');
 
 beforeEach(() => cy.openPage('home'));
 
@@ -12,7 +12,7 @@ describe('Page banner', () => {
         [
             './Simon_Hudson_CV.pdf',
             'https://github.com/simonhudson',
-            'https://stackoverflow.com/story/simonhudson'
+            'https://stackoverflow.com/story/simonhudson',
         ].forEach((link, index) =>
             cy
                 .get('.external-links__link')

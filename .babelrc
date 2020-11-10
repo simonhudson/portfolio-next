@@ -9,15 +9,14 @@
         "@babel/plugin-proposal-object-rest-spread",
         "@babel/plugin-transform-runtime",
         "@babel/plugin-transform-async-to-generator",
-        [
-            "module-resolver",
+        ["babel-plugin-root-import",
             {
-                "root": ["./"],
-                "alias": {
-                    "components": "./components",
-                    "static": "./static",
-                    "cypress": "./cypress"
-                }
+                "paths": [
+                    {
+                        "rootPathPrefix": "~",
+                        "rootPathSuffix": "src"
+                    }
+                ]
             }
         ]
     ]

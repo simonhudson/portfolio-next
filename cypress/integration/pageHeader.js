@@ -1,4 +1,4 @@
-'use strict';
+const cy = require('cypress');
 
 beforeEach(() => cy.openPage('home'));
 

@@ -1,75 +1,85 @@
 {
-    "name": "portfolio-next",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "build": "next build",
-        "start": "next start -p $PORT",
-        "start:dev": "nodemon --exec \"next build && next start\"",
-        "heroku-postbuild": "npm run build",
-        "test": "jest",
-        "test:e2e": "./node_modules/.bin/cypress run --browser chrome",
-        "test:e2e:open": "./node_modules/.bin/cypress open"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/simonhudson/portfolio-next.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/simonhudson/portfolio-next/issues"
-    },
-    "homepage": "https://github.com/simonhudson/portfolio-next#readme",
-    "dependencies": {
-        "@svgr/webpack": "^4.3.3",
-        "@zeit/next-sass": "^1.0.1",
-        "express": "^4.17.1",
-        "lodash": "^4.17.15",
-        "next": "^9.1.5",
-        "next-compose": "0.0.2",
-        "next-images": "^1.2.0",
-        "node-sass": "^4.13.0",
-        "react": "^16.12.0",
-        "react-dom": "^16.12.0",
-        "react-no-ssr": "^1.1.0"
-    },
-    "devDependencies": {
-        "@babel/cli": "^7.2.3",
-        "@babel/core": "^7.7.5",
-        "@babel/node": "^7.2.2",
-        "@babel/plugin-proposal-class-properties": "^7.3.4",
-        "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
-        "@babel/plugin-syntax-dynamic-import": "^7.7.4",
-        "@babel/plugin-syntax-import-meta": "^7.2.0",
-        "@babel/plugin-transform-async-to-generator": "^7.3.4",
-        "@babel/plugin-transform-runtime": "^7.3.4",
-        "@babel/preset-env": "^7.7.6",
-        "@babel/preset-react": "^7.7.4",
-        "@babel/register": "^7.0.0",
-        "@babel/runtime": "^7.7.6",
-        "@testing-library/react": "^9.3.3",
-        "babel-core": "^7.0.0-bridge.0",
-        "babel-eslint": "^10.0.1",
-        "babel-jest": "^24.9.0",
-        "babel-loader": "^8.0.5",
-        "babel-plugin-module-resolver": "^4.0.0",
-        "babel-plugin-root-import": "^6.1.0",
-        "chai": "^4.2.0",
-        "cypress": "^4.2.0",
-        "enzyme": "^3.10.0",
-        "enzyme-adapter-react-16": "^1.15.1",
-        "jest": "^24.9.0",
-        "nodemon": "^2.0.2",
-        "react-test-renderer": "^16.12.0"
-    },
-    "jest": {
-        "setupFilesAfterEnv": [
-            "<rootDir>/config/tests/jest.setup.js"
-        ],
-        "moduleNameMapper": {
-            "\\.(css|less|sass|scss)$": "<rootDir>/config/tests/mocks/style.js"
-        }
+  "name": "portfolio-next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec \"next dev\"",
+    "build": "next build && next export",
+    "start": "next start -p $PORT",
+    "lint": "eslint ./**/**.js",
+    "lint:fix": "eslint ./**/**.js --fix",
+    "test": "jest --colors",
+    "test:e2e": "./node_modules/.bin/cypress run --browser chrome",
+    "test:e2e:open": "./node_modules/.bin/cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonhudson/portfolio-next.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonhudson/portfolio-next/issues"
+  },
+  "homepage": "https://github.com/simonhudson/portfolio-next#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "ejs": "^2.7.4",
+    "husky": "^4.2.5",
+    "lighthouse": "^6.0.0",
+    "next": "^9.5.5",
+    "next-images": "^1.4.0",
+    "next-secure-headers": "^2.0.0",
+    "node-fetch": "^2.6.0",
+    "polished": "^3.5.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "sass": "^1.26.3",
+    "styled-components": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.5",
+    "@babel/plugin-transform-async-to-generator": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-root-import": "^6.5.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "chai": "^4.2.0",
+    "cypress": "^4.4.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-loader": "^4.0.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "img-loader": "^3.0.1",
+    "jest": "^25.4.0",
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.4",
+    "react-axe": "^3.4.1"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>src/config/tests/jest.setup.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss|svg)$": "<rootDir>src/config/tests/mocks/style.js"
     }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm test"
+    }
+  }
 }

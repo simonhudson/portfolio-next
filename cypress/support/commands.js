@@ -26,6 +26,6 @@
 
 import { routes } from '../config';
 
-Cypress.Commands.add('openPage', page => {
+Cypress.Commands.add('openPage', (page) => {
     cy.visit(routes[page]);
 });
