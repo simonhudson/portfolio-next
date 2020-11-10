@@ -7,8 +7,16 @@ const Wrapper = styled.div`
     border-top: ${rem(10)} solid ${({ theme }) => theme.palette.primary.b};
     display: flex;
     flex-wrap: wrap;
-    padding: ${rem(20)};
+    padding: ${rem(10)};
     width: 100%;
+
+    ${({ theme }) =>
+        theme.media(
+            'tablet-p',
+            `
+			    padding: ${rem(20)};
+			    `
+        )};
 `;
 
 const Strapline = styled.p`
