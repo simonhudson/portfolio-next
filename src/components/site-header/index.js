@@ -5,12 +5,12 @@ import SiteLogo from '~/components/site-logo';
 
 const SiteHeader = () => {
     return (
-        <Wrapper>
+        <Wrapper data-test="site-header">
             <layout.Wrap>
                 <InnerWrap>
                     <SiteLogo />
-                    <Strapline>
-                        <span>Web Design &amp; Development by&nbsp;</span>
+                    <Strapline data-test="site-header__strapline">
+                        <span>Web Design &amp; Development by </span>
                         <span>Simon Hudson</span>
                     </Strapline>
                 </InnerWrap>
