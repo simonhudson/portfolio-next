@@ -1,3 +1,0 @@
-@mixin border-radius($topLeft: 5px, $topRight: $topLeft, $bottomRight: $topLeft, $bottomLeft: $topLeft) {
-	border-radius: #{$topLeft} #{$topRight} #{$bottomRight} #{$bottomLeft};
-}

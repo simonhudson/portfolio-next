@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { ThemeProvider } from 'styled-components';
 import Theme from '~/theme';
@@ -18,8 +19,13 @@ const App = ({ Component, pageProps }) => {
         route: router.route,
     };
 
+    let pageTitle = 'Web Design &amp; Development by Simon Hudson';
+
     return (
         <>
+            <Head>
+                <title>{pageTitle}</title>
+            </Head>
             <ThemeProvider theme={Theme}>
                 <main>
                     <Component {...pageProps} />

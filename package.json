@@ -1,8 +1,6 @@
 {
-  "name": "portfolio-next",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "next-project",
+  "version": "0.1.0",
   "scripts": {
     "dev": "nodemon --exec \"next dev\"",
     "build": "next build && next export",
@@ -10,19 +8,14 @@
     "lint": "eslint ./**/**.js",
     "lint:fix": "eslint ./**/**.js --fix",
     "test": "jest --colors",
-    "test:e2e": "./node_modules/.bin/cypress run --browser chrome",
-    "test:e2e:open": "./node_modules/.bin/cypress open"
+    "cypress": "./node_modules/.bin/cypress run",
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cypress:chrome": "./node_modules/.bin/cypress run -b chrome",
+    "cypress:edge": "./node_modules/.bin/cypress run -b C:\\Windows\\SystemApps\\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\\MicrosoftEdge.exe",
+    "cypress:firefox": "./node_modules/.bin/cypress run -b firefox",
+    "cypress:ie": "./node_modules/.bin/cypress run -b \"C:\\Program Files\\internet explorer\\iexplore.exe\"",
+    "a11y": "axe.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/simonhudson/portfolio-next.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/simonhudson/portfolio-next/issues"
-  },
-  "homepage": "https://github.com/simonhudson/portfolio-next#readme",
   "dependencies": {
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",

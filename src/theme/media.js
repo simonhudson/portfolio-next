@@ -1,3 +1,5 @@
+'use strict';
+
 import breakpoints from './breakpoints';
 
 module.exports = (media, styles) => `
