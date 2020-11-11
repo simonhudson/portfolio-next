@@ -11,8 +11,21 @@ const Wrap = styled.div`
 
 const Title = styled.h1`
     font-size: ${rem(20)};
-    font-weight: 700;
     line-height: ${rem(38)};
+
+    span:first-of-type {
+        display: block;
+        font-size: ${rem(24)};
+        font-weight: 600;
+
+        &:after {
+            content: '';
+            display: block;
+            border-bottom: 2px solid ${({ theme }) => theme.palette.primary.b};
+            margin: ${({ theme }) => theme.margin.default} 0;
+            width: 10%;
+        }
+    }
 `;
 
 const Shape = styled.svg`
