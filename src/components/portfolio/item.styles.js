@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { rem } from 'polished';
 import { padding } from '~/theme';
 
+const LAYOUT_SWITCH_BREAKPOINT = 'tablet-l';
+
 const Wrap = styled.div`
     display: flex;
     flex-direction: column;
@@ -9,7 +11,7 @@ const Wrap = styled.div`
 
     ${({ theme }) =>
         theme.media(
-            'tablet-l',
+            LAYOUT_SWITCH_BREAKPOINT,
             `
             flex-direction: row;
             padding: ${padding.lg} 0;
@@ -22,13 +24,29 @@ const Wrap = styled.div`
 `;
 
 const Img = styled.img`
-    width: 50%;
     height: 100%;
+    width: 100%;
+
+    ${({ theme }) =>
+        theme.media(
+            LAYOUT_SWITCH_BREAKPOINT,
+            `
+            width: 50%;
+            `
+        )};
 `;
 
 const Text = styled.div`
-    width: 50%;
     height: 100%;
+    width: 100%;
+
+    ${({ theme }) =>
+        theme.media(
+            LAYOUT_SWITCH_BREAKPOINT,
+            `
+            width: 50%;
+            `
+        )};
 `;
 
 const Title = styled.h2`
