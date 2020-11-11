@@ -3,12 +3,12 @@ import spacing from './spacing';
 describe('theme/spacing', () => {
     it('should return expected values', () => {
         expect(spacing).toEqual({
-            default: 16,
-            xsm: 4,
-            sm: 8,
-            md: 32,
-            lg: 64,
-            xlg: 96,
+            default: 14,
+            xsm: 3.5,
+            sm: 7,
+            md: 28,
+            lg: 56,
+            xlg: 84,
         });
     });
 });
