@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { rem } from 'polished';
 
 const Logo = styled.img`
@@ -12,6 +12,13 @@ const Logo = styled.img`
             width: ${rem(50)};
             `
         )};
+
+    ${(props) =>
+        props.context === 'footer' &&
+        css`
+            filter: grayscale(1);
+            opacity: 0.2;
+        `};
 `;
 
 export { Logo };

@@ -5,7 +5,7 @@ import SiteLogo from '~/components/site-logo';
 
 const SiteHeader = () => {
     return (
-        <Wrapper data-test="site-header">
+        <Wrapper data-test="site-header" id="site-header">
             <layout.Wrap>
                 <InnerWrap>
                     <SiteLogo />

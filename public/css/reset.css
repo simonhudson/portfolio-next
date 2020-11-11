@@ -29,6 +29,10 @@ span, strong, em {
     font-size: inherit;
 }
 
+strong {
+    font-weight: 600;
+}
+
 .no-js-alert {
     display: block;
 }
