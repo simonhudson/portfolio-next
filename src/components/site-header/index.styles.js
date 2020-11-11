@@ -25,7 +25,7 @@ const InnerWrap = styled.div`
 
 const Strapline = styled.p`
     color: ${({ theme }) => theme.palette.primary.bodyText};
-    font-size: ${rem(14)};
+    font-size: ${rem(16)};
     margin: 0;
     padding-left: ${rem(10)};
     text-transform: uppercase;

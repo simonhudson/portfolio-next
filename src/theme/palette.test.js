@@ -1,11 +1,8 @@
-'use strict';
-
 import palette from './palette';
 
 describe('theme/palette', () => {
-
-	it('should return expected values', () => {
-		expect(palette).toEqual({
+    it('should return expected values', () => {
+        expect(palette).toEqual({
             primary: {
                 a: '#406eb3',
                 b: '#E65100',
@@ -21,5 +18,4 @@ describe('theme/palette', () => {
             },
         });
     });
-    
 });

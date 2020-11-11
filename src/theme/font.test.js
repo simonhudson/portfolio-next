@@ -1,11 +1,8 @@
-'use strict';
-
 import font from './font';
 
 describe('theme/font', () => {
-
-	it('should return expected values', () => {
-		expect(font).toEqual({
+    it('should return expected values', () => {
+        expect(font).toEqual({
             size: '14px',
             sansSerif: `'Open Sans', arial, helvetica, sans-serif`,
             serif: `'Lora', 'times new roman', serif`,
@@ -16,5 +13,4 @@ describe('theme/font', () => {
             lineHeight: `1.8`,
         });
     });
-    
 });

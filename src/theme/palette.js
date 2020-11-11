@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = {
     primary: {
         a: '#406eb3',
