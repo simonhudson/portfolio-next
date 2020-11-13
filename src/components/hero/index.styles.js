@@ -30,9 +30,8 @@ const Title = styled.h1`
         &::after {
             content: '';
             display: block;
-            border-bottom: 2px solid ${({ theme }) => theme.palette.primary.b};
+            border-bottom: 2px solid ${({ theme }) => theme.palette.primary.a};
             margin: ${({ theme }) => theme.margin.default} 0;
-            width: 10%;
         }
     }
 
@@ -55,18 +54,34 @@ const Shape = styled.svg`
 `;
 
 const CTA = styled.a`
-    background: ${({ theme }) => theme.palette.primary.b};
+    background: ${({ theme }) => theme.palette.primary.a};
     border: 2px solid ${({ theme }) => theme.palette.primary.white};
     color: ${({ theme }) => theme.palette.primary.white};
     display: inline-block;
     font-weight: 600;
     font-size: ${rem(16)};
     padding: ${({ theme }) => theme.padding.md};
+    padding-right: ${({ theme }) => theme.padding.lg};
+    position: relative;
     text-decoration: none;
 
-    &::hover,
+    &:hover,
     &:focus {
         text-decoration: underline;
+    }
+
+    &::after {
+        background: transparent;
+        border-right: 3px solid ${({ theme }) => theme.palette.primary.white};
+        border-bottom: 3px solid ${({ theme }) => theme.palette.primary.white};
+        content: '';
+        display: inline-block;
+        height: ${rem(8)};
+        position: absolute;
+        right: ${({ theme }) => theme.padding.md};
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+        width: ${rem(8)};
     }
 `;
 

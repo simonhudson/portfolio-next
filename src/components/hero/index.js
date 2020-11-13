@@ -27,7 +27,7 @@ const Hero = () => {
                 viewBox="0 0 100 100"
                 preserveAspectRatio="none"
             >
-                <polygon fill="#f4f2ee" points="0,100 100,0 100,100" />
+                <polygon fill="#F6EFE9" points="0,100 100,0 100,100" />
             </Shape>
         </Wrap>
     );

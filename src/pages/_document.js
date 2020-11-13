@@ -15,10 +15,6 @@ class Layout extends Document {
                         href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&amp;family=Open+Sans:wght@300;400;600;700&amp;display=swap"
                         rel="stylesheet"
                     />
-                    <link
-                        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-                        rel="stylesheet"
-                    />
                     <link href="/css/reset.css" rel="stylesheet" />
                 </Head>
                 <body>

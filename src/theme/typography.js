@@ -12,7 +12,7 @@ const H1 = (props) => {
         : 'h1';
 
     const StyledH1 = styled[element]`
-        color: ${({ theme }) => theme.palette.primary.b};
+        color: ${({ theme }) => theme.palette.primary.a};
         font-family: 'Lora', sans-serif;
         font-weight: 400;
         font-size: ${rem(28)};
