@@ -4,7 +4,7 @@ import { assertElementExists, mountWithTheme } from '~/config/tests/utilities';
 
 describe('SiteFooter', () => {
     let objectUnderTest;
-    const selector = `div[data-test="site-footer"]`;
+    const selector = `footer[data-test="site-footer"]`;
 
     afterEach(() => (!!objectUnderTest ? objectUnderTest.unmount() : null));
 
