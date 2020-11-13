@@ -22,6 +22,5 @@ describe('SiteHeader', () => {
         );
     });
 
-    const initialise = (props) =>
-        (objectUnderTest = mountWithTheme(<SiteHeader />));
+    const initialise = () => (objectUnderTest = mountWithTheme(<SiteHeader />));
 });

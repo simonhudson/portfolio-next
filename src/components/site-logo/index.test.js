@@ -13,6 +13,5 @@ describe('SiteLogo', () => {
         assertElementExists(objectUnderTest, selector);
     });
 
-    const initialise = (props) =>
-        (objectUnderTest = mountWithTheme(<SiteLogo />));
+    const initialise = () => (objectUnderTest = mountWithTheme(<SiteLogo />));
 });

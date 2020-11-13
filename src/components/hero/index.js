@@ -16,6 +16,7 @@ const Hero = () => {
                     <strong>usable</strong> websites and applications.
                 </Title>
                 <CTA
+                    data-test="hero__cta"
                     href="#site-footer"
                     onClick={(e) => scrollToElement(e, 'site-footer')}
                 >
