@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrap = styled.div`
     margin: 0 auto;
-    width: 94%;
+    width: 90%;
 
     ${({ theme }) =>
         theme.media(

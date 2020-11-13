@@ -19,6 +19,14 @@ const Title = styled.h1`
         font-size: ${rem(24)};
         font-weight: 700;
 
+        ${({ theme }) =>
+            theme.media(
+                'tablet-l',
+                `
+                font-size: ${rem(38)};
+                `
+            )};
+
         &::after {
             content: '';
             display: block;
@@ -27,6 +35,16 @@ const Title = styled.h1`
             width: 10%;
         }
     }
+
+    ${({ theme }) =>
+        theme.media(
+            'tablet-l',
+            `
+            font-size: ${rem(28)};
+            line-height: ${rem(46)};
+            width: 66%;
+            `
+        )};
 `;
 
 const Shape = styled.svg`
@@ -37,12 +55,19 @@ const Shape = styled.svg`
 `;
 
 const CTA = styled.a`
-    background: ${({ theme }) => theme.palette.primary.white};
-    border: 2px solid ${({ theme }) => theme.palette.primary.b};
-    color: ${({ theme }) => theme.palette.primary.b};
+    background: ${({ theme }) => theme.palette.primary.b};
+    border: 2px solid ${({ theme }) => theme.palette.primary.white};
+    color: ${({ theme }) => theme.palette.primary.white};
     display: inline-block;
     font-weight: 600;
+    font-size: ${rem(16)};
     padding: ${({ theme }) => theme.padding.md};
+    text-decoration: none;
+
+    &::hover,
+    &:focus {
+        text-decoration: underline;
+    }
 `;
 
 export { Wrap, Title, Shape, CTA };

@@ -15,7 +15,10 @@ const Hero = () => {
                     create <strong>accessible</strong> and{' '}
                     <strong>usable</strong> websites and applications.
                 </Title>
-                <CTA onClick={(e) => scrollToElement(e, 'site-footer')}>
+                <CTA
+                    href="#site-footer"
+                    onClick={(e) => scrollToElement(e, 'site-footer')}
+                >
                     Want to know more?
                 </CTA>
             </layout.Wrap>
@@ -24,7 +27,7 @@ const Hero = () => {
                 viewBox="0 0 100 100"
                 preserveAspectRatio="none"
             >
-                <polygon fill="#f5f5f5" points="0,100 100,0 100,100" />
+                <polygon fill="#f4f2ee" points="0,100 100,0 100,100" />
             </Shape>
         </Wrap>
     );
