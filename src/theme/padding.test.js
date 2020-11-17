@@ -9,6 +9,7 @@ describe('theme/padding', () => {
             md: '1.75rem',
             lg: '3.5rem',
             xlg: '5.25rem',
+            xxlg: '7rem',
         });
     });
 });
