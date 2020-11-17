@@ -51,6 +51,18 @@ const Strapline = styled.p`
             `};
     }
 
+    span:first-of-type {
+        display: none;
+
+        ${({ theme }) =>
+            theme.media(
+                'tablet-p',
+                `
+			    display: inline;
+			    `
+            )};
+    }
+
     span:nth-of-type(2) {
         color: ${({ theme }) => theme.palette.primary.a};
         font-weight: 700;
