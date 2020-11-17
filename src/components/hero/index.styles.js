@@ -4,7 +4,7 @@ import { rem } from 'polished';
 const Wrap = styled.div`
     background-color: ${({ theme }) => theme.palette.primary.white};
     clip-path: polygon(0% 0, 430% 0%, 20% 100%, 0% 90%);
-    height: ${rem(500)};
+    height: ${rem(540)};
     left: 0;
     line-height: 0;
     padding: ${({ theme }) => theme.padding.xxlg} 0
