@@ -8,13 +8,17 @@ class SiteHeader extends Component {
         super(props);
         this.state = {
             isScrolled: false,
+            scrollPosition: 0,
         };
     }
 
     addEventListeners = () => {
         const html = document.querySelector('html');
         window.addEventListener('scroll', () =>
-            this.setState({ isScrolled: html.scrollTop > 0 })
+            this.setState({
+                isScrolled: html.scrollTop > 0,
+                scrollPosition: html.scrollTop,
+            })
         );
     };
 
@@ -32,6 +36,7 @@ class SiteHeader extends Component {
             >
                 <layout.Wrap>
                     <InnerWrap>
+                        {state.scrollPosition}
                         <SiteLogo />
                         <Strapline data-test="site-header__strapline">
                             <span>Web Design &amp; Development by </span>
