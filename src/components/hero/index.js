@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrap, Title, Shape, CTA } from './index.styles';
+import { Wrap, Title, CTA } from './index.styles';
 import { layout } from '~/theme';
 import scrollToElement from '~/utilities/scrollToElement';
 
@@ -23,13 +23,6 @@ const Hero = () => {
                     Want to know more?
                 </CTA>
             </layout.Wrap>
-            <Shape
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 100 100"
-                preserveAspectRatio="none"
-            >
-                <polygon fill="#F6EFE9" points="0,100 100,0 100,100" />
-            </Shape>
         </Wrap>
     );
 };

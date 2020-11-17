@@ -1,12 +1,37 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { rem } from 'polished';
 
 const Wrap = styled.div`
-    background: ${({ theme }) => theme.palette.primary.white};
+    background-color: ${({ theme }) => theme.palette.primary.white};
+    clip-path: polygon(0% 0, 430% 0%, 20% 100%, 0% 90%);
     height: ${rem(440)};
     line-height: 0;
     padding: ${({ theme }) => theme.padding.md} 0;
     position: relative;
+
+    &::before {
+        background-color: ${({ theme }) => theme.palette.primary.white};
+        ${({ theme }) =>
+            css`
+                background-image: radial-gradient(
+                        ${theme.palette.primary.a} 1px,
+                        transparent 1px
+                    ),
+                    radial-gradient(
+                        ${theme.palette.primary.a} 1px,
+                        ${theme.palette.primary.white} 1px
+                    );
+            `};
+        background-position: 0 0, 20px 20px;
+        background-size: 40px 40px;
+        content: '';
+        height: 100%;
+        left: 0;
+        opacity: 0.25;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
 `;
 
 const Title = styled.h1`
@@ -32,6 +57,7 @@ const Title = styled.h1`
             display: block;
             border-bottom: 2px solid ${({ theme }) => theme.palette.primary.a};
             margin: ${({ theme }) => theme.margin.default} 0;
+            width: 10%;
         }
     }
 
@@ -44,13 +70,6 @@ const Title = styled.h1`
             width: 66%;
             `
         )};
-`;
-
-const Shape = styled.svg`
-    bottom: 0;
-    height: ${rem(60)};
-    position: absolute;
-    width: 100%;
 `;
 
 const CTA = styled.a`
@@ -85,4 +104,4 @@ const CTA = styled.a`
     }
 `;
 
-export { Wrap, Title, Shape, CTA };
+export { Wrap, Title, CTA };
