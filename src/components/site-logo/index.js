@@ -15,6 +15,7 @@ const SiteLogo = (props) => {
             }
             src={logo}
             context={props.context}
+            isScrolled={props.isScrolled}
         />
     );
 };

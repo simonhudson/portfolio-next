@@ -7,4 +7,5 @@ module.exports = {
     md: BASE_SIZE * 2,
     lg: BASE_SIZE * 4,
     xlg: BASE_SIZE * 6,
+    xxlg: BASE_SIZE * 8,
 };
