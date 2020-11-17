@@ -9,7 +9,6 @@ const Portfolio = () => {
             {data.map((item, index) => (
                 <Item key={index} {...item} />
             ))}
-            ;
         </PortfolioWrap>
     );
 };
