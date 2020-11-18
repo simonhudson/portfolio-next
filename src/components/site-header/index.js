@@ -5,11 +5,7 @@ import SiteLogo from '~/components/site-logo';
 
 const SiteHeader = (props) => {
     return (
-        <Wrapper
-            data-test="site-header"
-            id="site-header"
-            isScrolled={props.isScrolled}
-        >
+        <Wrapper data-test="site-header" isScrolled={props.isScrolled}>
             <layout.Wrap>
                 <InnerWrap>
                     <SiteLogo isScrolled={props.isScrolled} />

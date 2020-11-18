@@ -15,8 +15,10 @@ const Logo = styled.img`
     ${(props) =>
         props.context === 'footer' &&
         css`
+            display: block;
             filter: grayscale(1);
             opacity: 0.2;
+            margin: 0 auto;
             width: ${rem(40)};
         `};
 `;

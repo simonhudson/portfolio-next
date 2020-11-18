@@ -9,9 +9,7 @@ const SiteLogo = (props) => {
             alt=""
             data-test="site-logo"
             onClick={(e) =>
-                props.context === 'footer'
-                    ? scrollToElement(e, 'site-header')
-                    : null
+                props.context === 'footer' ? scrollToElement(e, 'top') : null
             }
             src={logo}
             context={props.context}

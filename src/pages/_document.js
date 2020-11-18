@@ -17,7 +17,7 @@ class Layout extends Document {
                     />
                     <link href="/css/reset.css" rel="stylesheet" />
                 </Head>
-                <body>
+                <body id="top">
                     <Main />
                     <NextScript />
                 </body>

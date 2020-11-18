@@ -71,7 +71,6 @@ const Title = styled.h1`
             `
             font-size: ${rem(28)};
             line-height: ${rem(46)};
-            width: 66%;
             `
         )};
 `;
