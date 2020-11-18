@@ -2,7 +2,7 @@
   "name": "next-project",
   "version": "0.1.0",
   "scripts": {
-    "dev": "nodemon --exec \"next dev\"",
+    "dev": "nodemon --exec \"next dev -p 3001\"",
     "build": "next build && next export",
     "start": "next start -p $PORT",
     "lint": "eslint ./**/**.js",
