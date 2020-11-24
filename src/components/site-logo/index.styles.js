@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { rem } from 'polished';
 
-const Logo = styled.img`
+const Logo = styled.svg`
     height: auto;
     transition: all 0.5s ease-in-out;
     width: ${rem(70)};
