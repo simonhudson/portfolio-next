@@ -1,6 +1,6 @@
 module.exports = {
     primary: {
-        a: `${process.env.PALETTE_PRIMARY_A}`,
+        a: '#D65F59',
         bodyText: '#202020',
         black: '#333',
         white: '#fff',

@@ -4,7 +4,7 @@ const { createSecureHeaders } = require('next-secure-headers');
 
 const setEnvVars = () => {
     const envObj = {};
-    const KEYS_TO_SET = ['APP_ENV', 'PALETTE_PRIMARY_A'];
+    const KEYS_TO_SET = ['APP_ENV'];
     for (let key in process.env) {
         if (KEYS_TO_SET.includes(key)) envObj[key] = process.env[key];
     }
