@@ -4,7 +4,7 @@ import { assertElementExists, mountWithTheme } from '~/config/tests/utilities';
 
 describe('SiteLogo', () => {
     let objectUnderTest;
-    const selector = `img[data-test="site-logo"]`;
+    const selector = `svg[data-test="site-logo"]`;
 
     afterEach(() => (!!objectUnderTest ? objectUnderTest.unmount() : null));
 
