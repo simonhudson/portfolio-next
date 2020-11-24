@@ -1,6 +1,6 @@
 module.exports = {
     primary: {
-        a: '#D65F59',
+        a: '#64848F',
         bodyText: '#202020',
         black: '#333',
         white: '#fff',
