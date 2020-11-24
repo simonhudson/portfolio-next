@@ -5,7 +5,7 @@ import { assertElementExists, mountWithTheme } from '~/config/tests/utilities';
 describe('SiteHeader', () => {
     let objectUnderTest;
     const selector = `div[data-test="site-header"]`;
-    const logo = `img[data-test="site-logo"]`;
+    const logo = `svg[data-test="site-logo"]`;
     const strapline = `p[data-test="site-header__strapline"]`;
 
     afterEach(() => (!!objectUnderTest ? objectUnderTest.unmount() : null));
