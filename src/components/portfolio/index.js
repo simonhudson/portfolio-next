@@ -5,7 +5,7 @@ import { PortfolioWrap } from './index.styles';
 
 const Portfolio = () => {
     return (
-        <PortfolioWrap>
+        <PortfolioWrap data-test="portfolio">
             {data.map((item, index) => (
                 <Item key={index} {...item} />
             ))}
