@@ -2,6 +2,7 @@ import React from 'react';
 import { layout } from '~/theme';
 import { Wrapper, InnerWrap, Strapline } from './index.styles';
 import SiteLogo from '~/components/site-logo';
+import PropTypes from 'prop-types';
 
 const SiteHeader = (props) => {
     return (
@@ -20,6 +21,10 @@ const SiteHeader = (props) => {
             </layout.Wrap>
         </Wrapper>
     );
+};
+
+SiteHeader.propTypes = {
+    isScrolled: PropTypes.bool.isRequired,
 };
 
 export default SiteHeader;

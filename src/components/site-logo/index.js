@@ -2,6 +2,7 @@ import React from 'react';
 import { Logo } from './index.styles';
 import scrollToElement from '~/utilities/scrollToElement';
 import { palette } from '~/theme';
+import PropTypes from 'prop-types';
 
 const SiteLogo = (props) => {
     return (
@@ -54,6 +55,11 @@ const SiteLogo = (props) => {
             />
         </Logo>
     );
+};
+
+SiteLogo.propTypes = {
+    context: PropTypes.oneOf([undefined, 'footer']),
+    isScrolled: PropTypes.bool,
 };
 
 export default SiteLogo;

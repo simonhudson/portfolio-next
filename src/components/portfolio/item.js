@@ -1,5 +1,6 @@
 import React from 'react';
 import { Wrap, Img, Text, Title } from './item.styles';
+import PropTypes from 'prop-types';
 
 const generateCopyMarkup = (props) => {
     if (props.omitText) return null;
@@ -12,7 +13,7 @@ const Item = (props) => {
     if (props.omit) return null;
     return (
         <Wrap data-test="portfolio-item">
-            <Img />
+            <Img alt={`${props.title} screen shot`} />
             <Text>
                 <Title data-test="portfolio-item__title">{props.title}</Title>
                 <div
@@ -24,6 +25,17 @@ const Item = (props) => {
             </Text>
         </Wrap>
     );
+};
+
+Item.propTypes = {
+    slug: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    client: PropTypes.string.isRequired,
+    text: PropTypes.arrayOf(PropTypes.string).isRequired,
+    url: PropTypes.string,
+    madeWith: PropTypes.arrayOf(PropTypes.string).isRequired,
+    date: PropTypes.string.isRequired,
+    omit: PropTypes.bool,
 };
 
 export default Item;
