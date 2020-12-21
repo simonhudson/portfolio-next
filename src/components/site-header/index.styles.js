@@ -9,7 +9,7 @@ const Wrapper = styled.div`
     top: -1px;
     transition: box-shadow 0.5s ease-in-out;
     width: 100%;
-    z-index: ${({ theme }) => theme.zIndex.indexOf('site-header')};
+    z-index: ${({ theme }) => theme.zIndex('site-header')};
 
     ${({ theme }) =>
         theme.media(
