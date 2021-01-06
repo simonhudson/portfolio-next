@@ -4,7 +4,7 @@ import { rem } from 'polished';
 const Wrapper = styled.div`
     background: transparent;
     border-top: ${rem(10)} solid ${({ theme }) => theme.palette.primary.a};
-    padding: ${rem(10)} 0;
+    padding: ${rem(20)} 0 ${rem(10)};
     position: sticky;
     top: -1px;
     transition: box-shadow 0.5s ease-in-out, padding 0.5s ease-in-out;
@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 
     ${({ theme }) =>
         theme.media(
-            'tablet-p',
+            'tablet-l',
             `
 			    padding: ${rem(40)} 0 ${rem(20)};
 			    `
@@ -24,10 +24,11 @@ const Wrapper = styled.div`
         css`
             background: ${({ theme }) => theme.palette.primary.white};
             box-shadow: 0 0 5px #bbb;
+            padding-top: ${rem(10)};
 
             ${({ theme }) =>
                 theme.media(
-                    'tablet-p',
+                    'tablet-l',
                     `
 			    padding-top: ${rem(20)};
 			    `
