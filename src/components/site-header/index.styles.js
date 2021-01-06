@@ -7,7 +7,7 @@ const Wrapper = styled.div`
     padding: ${rem(10)} 0;
     position: sticky;
     top: -1px;
-    transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out, padding 0.5s ease-in-out;
     width: 100%;
     z-index: ${({ theme }) => theme.zIndex('site-header')};
 
@@ -15,7 +15,7 @@ const Wrapper = styled.div`
         theme.media(
             'tablet-p',
             `
-			    padding: ${rem(20)} 0;
+			    padding: ${rem(40)} 0 ${rem(20)};
 			    `
         )};
 
@@ -24,6 +24,14 @@ const Wrapper = styled.div`
         css`
             background: ${({ theme }) => theme.palette.primary.white};
             box-shadow: 0 0 5px #bbb;
+
+            ${({ theme }) =>
+                theme.media(
+                    'tablet-p',
+                    `
+			    padding-top: ${rem(20)};
+			    `
+                )};
         `};
 `;
 
