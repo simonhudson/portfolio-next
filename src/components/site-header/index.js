@@ -24,7 +24,7 @@ const SiteHeader = (props) => {
 };
 
 SiteHeader.propTypes = {
-    isScrolled: PropTypes.bool.isRequired,
+    isScrolled: PropTypes.bool,
 };
 
 export default SiteHeader;
