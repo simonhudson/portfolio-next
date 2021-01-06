@@ -4,7 +4,7 @@ import { rem } from 'polished';
 const Wrap = styled.div`
     background-color: ${({ theme }) => theme.palette.primary.white};
     clip-path: polygon(0% 0, 430% 0%, 20% 100%, 0% 90%);
-    height: ${rem(540)};
+    height: ${rem(460)};
     left: 0;
     line-height: 0;
     padding: ${({ theme }) => theme.padding.xxlg} 0
@@ -12,6 +12,15 @@ const Wrap = styled.div`
     position: absolute;
     top: 0;
     width: 100%;
+
+    ${({ theme }) =>
+        theme.media(
+            'tablet-l',
+            `
+            padding-top: ${theme.padding.xxxlg};
+            height: ${rem(520)};
+            `
+        )};
 
     &::before {
         background-color: ${({ theme }) => theme.palette.primary.white};
@@ -39,29 +48,31 @@ const Wrap = styled.div`
 `;
 
 const Title = styled.h1`
+    font-family: ${({ theme }) => theme.font.serif};
     font-size: ${rem(20)};
     line-height: ${rem(38)};
     margin-bottom: ${({ theme }) => theme.margin.md};
 
-    span:first-of-type {
+    span {
         display: block;
-        font-size: ${rem(24)};
+        font-family: ${({ theme }) => theme.font.sansSerif};
+        font-size: ${rem(30)};
         font-weight: 700;
 
         ${({ theme }) =>
             theme.media(
                 'tablet-l',
                 `
-                font-size: ${rem(38)};
+                font-size: ${rem(42)};
                 `
             )};
 
         &::after {
             content: '';
             display: block;
-            border-bottom: 2px solid ${({ theme }) => theme.palette.primary.a};
-            margin: ${({ theme }) => theme.margin.default} 0;
-            width: 10%;
+            border-bottom: 5px solid ${({ theme }) => theme.palette.primary.a};
+            margin: ${({ theme }) => theme.margin.md} 0;
+            width: 15%;
         }
     }
 
@@ -71,6 +82,7 @@ const Title = styled.h1`
             `
             font-size: ${rem(28)};
             line-height: ${rem(46)};
+            width: 75%;
             `
         )};
 `;

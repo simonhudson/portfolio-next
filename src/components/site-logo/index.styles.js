@@ -7,12 +7,6 @@ const Logo = styled.svg`
     width: ${rem(70)};
 
     ${(props) =>
-        props.isScrolled &&
-        css`
-            width: ${rem(40)};
-        `};
-
-    ${(props) =>
         props.context === 'footer' &&
         css`
             display: block;

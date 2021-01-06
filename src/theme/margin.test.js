@@ -1,6 +1,6 @@
 import margin from './margin';
 
-describe('theme/padding', () => {
+describe('theme/margin', () => {
     it('should return expected values', () => {
         expect(margin).toEqual({
             default: '0.875rem',
@@ -10,6 +10,7 @@ describe('theme/padding', () => {
             lg: '3.5rem',
             xlg: '5.25rem',
             xxlg: '7rem',
+            xxxlg: '10.5rem',
         });
     });
 });

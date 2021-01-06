@@ -1,7 +1,6 @@
 import React from 'react';
-import { Wrap, Title, CTA } from './index.styles';
+import { Wrap, Title } from './index.styles';
 import { layout } from '~/theme';
-import scrollToElement from '~/utilities/scrollToElement';
 
 const Hero = () => {
     return (
@@ -15,13 +14,6 @@ const Hero = () => {
                     create <strong>accessible</strong> and{' '}
                     <strong>usable</strong> websites and applications.
                 </Title>
-                <CTA
-                    data-test="hero__cta"
-                    href="#site-footer"
-                    onClick={(e) => scrollToElement(e, 'site-footer')}
-                >
-                    Want to know more?
-                </CTA>
             </layout.Wrap>
         </Wrap>
     );

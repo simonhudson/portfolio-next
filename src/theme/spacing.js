@@ -8,4 +8,5 @@ module.exports = {
     lg: BASE_SIZE * 4,
     xlg: BASE_SIZE * 6,
     xxlg: BASE_SIZE * 8,
+    xxxlg: BASE_SIZE * 12,
 };

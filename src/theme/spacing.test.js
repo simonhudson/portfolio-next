@@ -10,6 +10,7 @@ describe('theme/spacing', () => {
             lg: 56,
             xlg: 84,
             xxlg: 112,
+            xxxlg: 168,
         });
     });
 });

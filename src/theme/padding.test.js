@@ -10,6 +10,7 @@ describe('theme/padding', () => {
             lg: '3.5rem',
             xlg: '5.25rem',
             xxlg: '7rem',
+            xxxlg: '10.5rem',
         });
     });
 });
