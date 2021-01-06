@@ -4,11 +4,10 @@ import { rem } from 'polished';
 const Wrap = styled.div`
     background-color: ${({ theme }) => theme.palette.primary.white};
     clip-path: polygon(0% 0, 430% 0%, 20% 100%, 0% 90%);
-    height: ${rem(460)};
     left: 0;
     line-height: 0;
     padding: ${({ theme }) => theme.padding.xxlg} 0
-        ${({ theme }) => theme.padding.default};
+        ${({ theme }) => theme.padding.lg};
     position: absolute;
     top: 0;
     width: 100%;
@@ -17,8 +16,7 @@ const Wrap = styled.div`
         theme.media(
             'tablet-l',
             `
-            padding-top: ${theme.padding.xxxlg};
-            height: ${rem(520)};
+            padding: ${theme.padding.xxxlg} 0 ${theme.padding.xlg};
             `
         )};
 
