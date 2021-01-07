@@ -25,11 +25,11 @@ const Wrap = styled.div`
         ${({ theme }) =>
             css`
                 background-image: radial-gradient(
-                        ${theme.palette.primary.a} 1px,
+                        ${theme.palette.primary.brand} 1px,
                         transparent 1px
                     ),
                     radial-gradient(
-                        ${theme.palette.primary.a} 1px,
+                        ${theme.palette.primary.brand} 1px,
                         ${theme.palette.primary.white} 1px
                     );
             `};
@@ -51,6 +51,10 @@ const Title = styled.h1`
     line-height: ${rem(38)};
     margin-bottom: ${({ theme }) => theme.margin.md};
 
+    strong {
+        color: ${({ theme }) => theme.palette.primary.brand};
+    }
+
     span {
         display: block;
         font-family: ${({ theme }) => theme.font.sansSerif};
@@ -68,7 +72,8 @@ const Title = styled.h1`
         &::after {
             content: '';
             display: block;
-            border-bottom: 5px solid ${({ theme }) => theme.palette.primary.a};
+            border-bottom: 5px solid
+                ${({ theme }) => theme.palette.primary.brand};
             margin: ${({ theme }) => theme.margin.md} 0;
             width: 15%;
         }
@@ -86,7 +91,7 @@ const Title = styled.h1`
 `;
 
 const CTA = styled.a`
-    background: ${({ theme }) => theme.palette.primary.a};
+    background: ${({ theme }) => theme.palette.primary.brand};
     border: 2px solid ${({ theme }) => theme.palette.primary.white};
     color: ${({ theme }) => theme.palette.primary.white};
     display: inline-block;

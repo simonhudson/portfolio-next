@@ -18,7 +18,7 @@ const SiteLogo = (props) => {
             viewBox="0 0 58 58"
         >
             <defs>
-                <style>{`.cls-1 { fill: ${palette.primary.a}; fill-rule: evenodd; }`}</style>
+                <style>{`.cls-1 { fill: ${palette.primary.brand}; fill-rule: evenodd; }`}</style>
             </defs>
             <path
                 className="cls-1"

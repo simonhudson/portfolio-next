@@ -3,7 +3,7 @@ import { rem } from 'polished';
 
 const Wrapper = styled.div`
     background: transparent;
-    border-top: ${rem(10)} solid ${({ theme }) => theme.palette.primary.a};
+    border-top: ${rem(10)} solid ${({ theme }) => theme.palette.primary.brand};
     padding: ${rem(20)} 0 ${rem(10)};
     position: sticky;
     top: -1px;
@@ -73,7 +73,7 @@ const Strapline = styled.p`
     }
 
     span:nth-of-type(2) {
-        color: ${({ theme }) => theme.palette.primary.a};
+        color: ${({ theme }) => theme.palette.primary.brand};
         font-weight: 700;
     }
 `;
