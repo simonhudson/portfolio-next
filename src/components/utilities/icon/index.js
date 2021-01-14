@@ -1,10 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
-
-const StyledIcon = styled.span`
-    display: inline-block;
-`;
 
 const Icon = (props) => {
     const typeMapping = {
@@ -12,11 +7,11 @@ const Icon = (props) => {
         brand: 'fab',
     };
     return (
-        <StyledIcon
+        <span
             className={`${typeMapping[props.type]} fa-${props.name}`}
             aria-hidden="true"
             data-test="icon"
-        ></StyledIcon>
+        ></span>
     );
 };
 
