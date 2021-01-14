@@ -1,7 +1,7 @@
-export default [
+module.exports = [
     {
         slug: 'experian-offers-hub',
-        title: 'Experian Offers Hub',
+        title: 'Experian Offers Huby',
         client: 'Experian',
         text: [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio lacinia, sollicitudin urna et, lacinia ex. Mauris malesuada tortor tristique dui eleifend luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at pellentesque augue, eu maximus orci. Vivamus in elit eu sem tincidunt sodales nec ac sapien',
@@ -48,7 +48,7 @@ export default [
         title: 'Football Data',
         client: 'Personal',
         text: [
-            'Making use of the open <a href="https://www.football-data.org" rel="noopener noreferrer" target="_blank">football-data.org</a> API, this application retrieves data for a specified club, offering users the opportunity to review their club\'s recent results, upcoming fixtures, squad and more.',
+            'Making use of the open <a href="https://www.football-data.org" rel="noopener noreferrer" target="_blank">football-data.org</a> API, this application retrieves data for a specified club, offering users the opportunity to review their club"s recent results, upcoming fixtures, squad and more.',
         ],
         github: 'football-data',
         madeWith: ['JavaScript (ES6)', 'React', 'Jest', 'Sass'],
@@ -100,7 +100,7 @@ export default [
         title: 'Last.fm',
         client: 'Personal',
         text: [
-            'Making use of the <a href="http://www.last.fm/" rel="noopener noreferrer" target="_blank">Last.fm</a> API, this tool simply provides a real-time display of a users\' most recently played tracks, or their top artists of all time, based on track plays. This data is then displayed as thumbnails, which click through to the relevant track/artist page on the Last.fm website.',
+            'Making use of the <a href="http://www.last.fm/" rel="noopener noreferrer" target="_blank">Last.fm</a> API, this tool simply provides a real-time display of a users" most recently played tracks, or their top artists of all time, based on track plays. This data is then displayed as thumbnails, which click through to the relevant track/artist page on the Last.fm website.',
         ],
         url: 'http://lastfm.heyhudson.com',
         github: 'lastfm',
@@ -130,7 +130,7 @@ export default [
         title: 'NHS Choices',
         client: 'Capita',
         text: [
-            'Working on one of the largest websites in Europe, it was my responsibility to create front-end code to the highest standards and then liaise with the back-end developers to ensure it was integrated properly into the solution.</p><p>As a public health information site, accessibility was at the forefront of everything we did, and as such my knowledge of progressive enhancement & graceful degradation, assistive technologies and cross-browser compatibility was increased hugely, helped in no small part by regular contact with third parties, such as the <a href="http://www.rnib.org.uk/" rel="noopener noreferrer" target="_blank">R.N.I.B</a> and <a href="https://www.abilitynet.org.uk/" rel="noopener noreferrer" target="_blank">AbilityNet</a>.',
+            'Working on one of the largest websites in Europe, it was my responsibility to create front-end code to the highest standards and then liaise with the back-end developers to ensure it was integrated properly into the solution.</p><p>As a public health information site, accessibility was at the forefront of everything we did, and as such my knowledge of progressive enhancement & graceful degradation, assistive technologies and cross-browser compatibility was increased hugely, helped in no small part by regular contact with third parties, such as the <a href="http://www.rnib.org.uk" rel="noopener noreferrer" target="_blank">R.N.I.B</a> and <a href="https://www.abilitynet.org.uk" rel="noopener noreferrer" target="_blank">AbilityNet</a>.',
         ],
         url: 'http://www.nhs.uk',
         madeWith: ['HTML', 'CSS', 'JavaScript/jQuery', 'Sharepoint', '.NET'],
