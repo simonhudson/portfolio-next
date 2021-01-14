@@ -1,6 +1,7 @@
 import React from 'react';
 import { Wrap, Title } from './index.styles';
 import { layout } from '~/theme';
+import Links from '~/components/links';
 
 const Hero = () => {
     return (
@@ -14,6 +15,7 @@ const Hero = () => {
                     <strong>accessible</strong> and <strong>usable</strong>{' '}
                     websites and applications.
                 </Title>
+                <Links />
             </layout.Wrap>
         </Wrap>
     );

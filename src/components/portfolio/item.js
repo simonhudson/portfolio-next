@@ -37,7 +37,7 @@ const Item = (props) => {
                             <VisuallyHidden>
                                 (opens in new tab/window)
                             </VisuallyHidden>
-                            <Icon type="external-link-alt" />
+                            <Icon type="solid" name="external-link-alt" />
                         </a>
                     </p>
                 )}

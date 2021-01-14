@@ -9,6 +9,7 @@ class Home extends Component {
         super(props);
         this.state = {
             isScrolled: false,
+            hidePortfolio: true,
         };
     }
 
@@ -30,9 +31,9 @@ class Home extends Component {
                 <SiteHeader isScrolled={state.isScrolled} />
                 <Hero />
                 <layout.Wrap>
-                    <Portfolio />
+                    {!state.hidePortfolio && <Portfolio />}
                 </layout.Wrap>
-                <SiteFooter />
+                {!state.hidePortfolio && <SiteFooter />}
             </>
         );
     };
