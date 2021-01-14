@@ -2,13 +2,7 @@
 
 import React from 'react';
 import Icon from './index';
-const cloneDeep = require('lodash/cloneDeep');
 import { assertElementExists, mountWithTheme } from '~/config/tests/utilities';
-
-const baseProps = {
-    type: 'solid',
-    name: 'external-link-alt',
-};
 
 describe('Icon', () => {
     let objectUnderTest;
@@ -17,8 +11,7 @@ describe('Icon', () => {
     afterEach(() => (!!objectUnderTest ? objectUnderTest.unmount() : null));
 
     it('should solid icon render as expected', () => {
-        const props = cloneDeep(baseProps);
-        initialise(props);
+        initialise({ type: 'solid', name: 'external-link-alt' });
         assertElementExists(objectUnderTest, selector);
         expect(objectUnderTest.find(selector).prop('className')).toEqual(
             'fas fa-external-link-alt'
