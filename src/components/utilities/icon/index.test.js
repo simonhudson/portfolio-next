@@ -6,7 +6,8 @@ const cloneDeep = require('lodash/cloneDeep');
 import { assertElementExists, mountWithTheme } from '~/config/tests/utilities';
 
 const baseProps = {
-    type: 'external-link-alt',
+    type: 'solid',
+    name: 'external-link-alt',
 };
 
 describe('Icon', () => {
@@ -15,12 +16,23 @@ describe('Icon', () => {
 
     afterEach(() => (!!objectUnderTest ? objectUnderTest.unmount() : null));
 
-    it('should render as expected', () => {
+    it('should solid icon render as expected', () => {
         const props = cloneDeep(baseProps);
         initialise(props);
         assertElementExists(objectUnderTest, selector);
         expect(objectUnderTest.find(selector).prop('className')).toEqual(
             'fas fa-external-link-alt'
+        );
+        expect(objectUnderTest.find(selector).prop('aria-hidden')).toEqual(
+            'true'
+        );
+    });
+
+    it('should brand icon render as expected', () => {
+        initialise({ type: 'brand', name: 'github' });
+        assertElementExists(objectUnderTest, selector);
+        expect(objectUnderTest.find(selector).prop('className')).toEqual(
+            'fab fa-github'
         );
         expect(objectUnderTest.find(selector).prop('aria-hidden')).toEqual(
             'true'
