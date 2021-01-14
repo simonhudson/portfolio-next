@@ -1,7 +1,7 @@
 module.exports = [
     {
         slug: 'experian-offers-hub',
-        title: 'Experian Offers Huby',
+        title: 'Experian Offers Hub',
         client: 'Experian',
         text: [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget odio lacinia, sollicitudin urna et, lacinia ex. Mauris malesuada tortor tristique dui eleifend luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at pellentesque augue, eu maximus orci. Vivamus in elit eu sem tincidunt sodales nec ac sapien',
