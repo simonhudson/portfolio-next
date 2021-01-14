@@ -22,6 +22,7 @@ describe('Item', () => {
     const selector = `div[data-test="portfolio-item"]`;
     const title = `h2[data-test="portfolio-item__title"]`;
     const text = `div[data-test="portfolio-item__text"]`;
+    const link = `a[data-test="portfolio-item__link"]`;
 
     afterEach(() => (!!objectUnderTest ? objectUnderTest.unmount() : null));
 
@@ -38,20 +39,25 @@ describe('Item', () => {
         assertElementDoesNotExist(objectUnderTest, selector);
     });
 
-    it('should render with expected title', () => {
+    it('should render with expected content', () => {
         const props = cloneDeep(baseProps);
         initialise(props);
         expect(objectUnderTest.find(title).text()).toEqual('Test Item');
-    });
-
-    it('should render with expected text', () => {
-        const props = cloneDeep(baseProps);
-        initialise(props);
         expect(objectUnderTest.find(text).html()).toContain(
             '<p>Text line 1</p>'
         );
         expect(objectUnderTest.find(text).html()).toContain(
             '<p>Text line 2</p>'
+        );
+        expect(objectUnderTest.find(link).text()).toEqual(
+            'View Test Item project (opens in new tab/window)'
+        );
+        expect(objectUnderTest.find(link).prop('href')).toEqual(
+            'https://www.foo.com'
+        );
+        expect(objectUnderTest.find(link).prop('target')).toEqual('_blank');
+        expect(objectUnderTest.find(link).prop('rel')).toEqual(
+            'noopener noreferrer'
         );
     });
 

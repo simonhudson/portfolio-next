@@ -2,6 +2,7 @@ import React from 'react';
 import { Wrap, Img, Text, Title } from './item.styles';
 import PropTypes from 'prop-types';
 import VisuallyHidden from '~/components/utilities/visually-hidden';
+import Icon from '~/components/utilities/icon';
 
 const generateCopyMarkup = (props) => {
     if (props.omitText) return null;
@@ -26,16 +27,17 @@ const Item = (props) => {
                 {props.url && (
                     <p>
                         <a
+                            data-test="portfolio-item__link"
                             href={props.url}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            View&nbsp;
-                            <VisuallyHidden>{props.title}&nbsp;</VisuallyHidden>
-                            project&nbsp;
+                            View <VisuallyHidden>{props.title} </VisuallyHidden>
+                            project{' '}
                             <VisuallyHidden>
                                 (opens in new tab/window)
                             </VisuallyHidden>
+                            <Icon type="external-link-alt" />
                         </a>
                     </p>
                 )}

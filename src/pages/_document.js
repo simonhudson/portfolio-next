@@ -16,6 +16,10 @@ class Layout extends Document {
                         rel="stylesheet"
                     />
                     <link href="/css/reset.css" rel="stylesheet" />
+                    <script
+                        src="https://kit.fontawesome.com/6331124e0b.js"
+                        crossOrigin="anonymous"
+                    ></script>
                 </Head>
                 <body id="top">
                     <Main />
