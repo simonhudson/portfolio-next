@@ -2,16 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+const StyledIcon = styled.span`
+    color: inherit;
+    font-size: inherit;
+`;
+
 const Icon = (props) => {
     const typeMapping = {
         solid: 'fas',
         brand: 'fab',
     };
-
-    const StyledIcon = styled.span`
-        color: inherit;
-        font-size: inherit;
-    `;
 
     return (
         <StyledIcon

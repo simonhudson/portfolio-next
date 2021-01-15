@@ -13,7 +13,7 @@ describe('Icon', () => {
     it('should solid icon render as expected', () => {
         initialise({ type: 'solid', name: 'external-link-alt' });
         assertElementExists(objectUnderTest, selector);
-        expect(objectUnderTest.find(selector).prop('className')).toEqual(
+        expect(objectUnderTest.find(selector).prop('className')).toContain(
             'fas fa-external-link-alt'
         );
         expect(objectUnderTest.find(selector).prop('aria-hidden')).toEqual(
@@ -24,7 +24,7 @@ describe('Icon', () => {
     it('should brand icon render as expected', () => {
         initialise({ type: 'brand', name: 'github' });
         assertElementExists(objectUnderTest, selector);
-        expect(objectUnderTest.find(selector).prop('className')).toEqual(
+        expect(objectUnderTest.find(selector).prop('className')).toContain(
             'fab fa-github'
         );
         expect(objectUnderTest.find(selector).prop('aria-hidden')).toEqual(
