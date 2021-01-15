@@ -11,7 +11,7 @@ module.exports = [
     },
     {
         linkText: 'Visit my LinkedIn profile',
-        url: 'www.linkedin.com/in/mrsimonhudson',
+        url: 'https://www.linkedin.com/in/mrsimonhudson',
         icon: 'linkedin',
     },
 ];
