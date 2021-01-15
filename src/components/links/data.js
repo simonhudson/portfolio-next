@@ -1,16 +1,16 @@
 module.exports = [
     {
-        title: 'Github',
+        linkText: 'Visit my Github profile',
         url: 'https://github.com/simonhudson',
         icon: 'github-square',
     },
     {
-        title: 'Stack Overflow',
+        linkText: 'Visit my Stack Overflow profile',
         url: 'https://stackoverflow.com/users/780782/simon-hudson',
         icon: 'stack-overflow',
     },
     {
-        title: 'LinkedIn',
+        linkText: 'Visit my LinkedIn profile',
         url: 'www.linkedin.com/in/mrsimonhudson',
         icon: 'linkedin',
     },

@@ -21,7 +21,7 @@ class Home extends Component {
     };
 
     componentDidMount = () => {
-        this.addEventListeners();
+        // this.addEventListeners();
     };
 
     render = () => {

@@ -2,12 +2,12 @@ import styled, { css } from 'styled-components';
 import { rem } from 'polished';
 
 const Wrap = styled.div`
-    background-color: ${({ theme }) => theme.palette.primary.white};
-    clip-path: polygon(0% 0, 430% 0%, 20% 100%, 0% 90%);
+    /* background-color: ${({ theme }) => theme.palette.primary.white}; */
+    /* clip-path: polygon(0% 0, 430% 0%, 20% 100%, 0% 90%); */
+    /* height: 100vh; */
     left: 0;
     line-height: 0;
-    padding: ${({ theme }) => theme.padding.xxlg} 0
-        ${({ theme }) => theme.padding.lg};
+    padding: ${({ theme }) => theme.padding.xxlg} 0 0;
     position: absolute;
     top: 0;
     width: 100%;
@@ -16,23 +16,23 @@ const Wrap = styled.div`
         theme.media(
             'tablet-l',
             `
-            padding: ${theme.padding.xxxlg} 0 ${theme.padding.xlg};
+            padding: ${theme.padding.xxxlg} 0 0;
             `
         )};
 
-    &::before {
+    /* &::after {
         background-color: ${({ theme }) => theme.palette.primary.white};
         ${({ theme }) =>
-            css`
-                background-image: radial-gradient(
-                        ${theme.palette.primary.brand} 1px,
-                        transparent 1px
-                    ),
-                    radial-gradient(
-                        ${theme.palette.primary.brand} 1px,
-                        ${theme.palette.primary.white} 1px
-                    );
-            `};
+        css`
+            background-image: radial-gradient(
+                    ${theme.palette.primary.brand} 1px,
+                    transparent 1px
+                ),
+                radial-gradient(
+                    ${theme.palette.primary.brand} 1px,
+                    ${theme.palette.primary.white} 1px
+                );
+        `};
         background-position: 0 0, 20px 20px;
         background-size: 40px 40px;
         content: '';
@@ -42,12 +42,13 @@ const Wrap = styled.div`
         position: absolute;
         top: 0;
         width: 100%;
-    }
+    } */
 `;
 
 const Title = styled.h1`
     font-family: ${({ theme }) => theme.font.serif};
     font-size: ${rem(20)};
+    font-weight: 300;
     line-height: ${rem(38)};
     margin-bottom: ${({ theme }) => theme.margin.md};
 
@@ -58,7 +59,7 @@ const Title = styled.h1`
     span {
         display: block;
         font-family: ${({ theme }) => theme.font.sansSerif};
-        font-size: ${rem(30)};
+        font-size: ${rem(26)};
         font-weight: 700;
 
         ${({ theme }) =>
