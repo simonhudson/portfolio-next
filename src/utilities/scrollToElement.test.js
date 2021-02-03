@@ -49,5 +49,7 @@ describe('scrollToElement', () => {
 
     // it('should call scrollIntoView() method on target element', () => {
     //     document.getElementById.mockReturnValue(true);
+    //     scrollToElement(e, targetId);
+    //     expect(targetElement.scrollIntoView).toHaveBeenCalledTimes(1);
     // });
 });
