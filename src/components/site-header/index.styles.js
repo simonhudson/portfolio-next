@@ -20,7 +20,7 @@ const Wrapper = styled.div`
         )};
 
     ${(props) =>
-        props.isScrolled &&
+        (props.isScrolled || !props.isScrolled) &&
         css`
             background: ${({ theme }) => theme.palette.primary.white};
             box-shadow: 0 0 5px #bbb;
@@ -54,7 +54,7 @@ const Strapline = styled.p`
         transition: all 0.5s ease-in-out;
 
         ${(props) =>
-            props.isScrolled &&
+            (props.isScrolled || !props.isScrolled) &&
             css`
                 opacity: 1;
             `};
