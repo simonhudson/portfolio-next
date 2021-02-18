@@ -7,7 +7,7 @@ const Wrap = styled.div`
     /* height: 100vh; */
     left: 0;
     line-height: 0;
-    padding: ${({ theme }) => theme.padding.xxlg} 0 0;
+    padding: ${({ theme }) => theme.padding.xlg} 0 0;
     position: absolute;
     top: 0;
     width: 100%;
@@ -43,6 +43,16 @@ const Wrap = styled.div`
         top: 0;
         width: 100%;
     } */
+`;
+
+const Inner = styled.div`
+    ${({ theme }) =>
+        theme.media(
+            'tablet-l',
+            `
+                width: 75%;
+                `
+        )};
 `;
 
 const Title = styled.h1`
@@ -86,9 +96,28 @@ const Title = styled.h1`
             `
             font-size: ${rem(28)};
             line-height: ${rem(46)};
-            width: 75%;
             `
         )};
+`;
+
+const SubTitle = styled.p`
+    font-family: ${({ theme }) => theme.font.serif};
+    font-size: ${rem(18)};
+    font-weight: 400;
+    line-height: ${rem(30)};
+
+    ${({ theme }) =>
+        theme.media(
+            'tablet-l',
+            `
+            font-size: ${rem(24)};
+            line-height: ${rem(36)};
+            `
+        )};
+
+    a {
+        color: ${({ theme }) => theme.palette.primary.brand};
+    }
 `;
 
 const CTA = styled.a`
@@ -123,4 +152,4 @@ const CTA = styled.a`
     }
 `;
 
-export { Wrap, Title, CTA };
+export { Wrap, Inner, Title, SubTitle, CTA };

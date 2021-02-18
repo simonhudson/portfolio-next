@@ -19,10 +19,10 @@ html {
 }
 
 html::before {
-    background-color: #fff;
+    background-color: #F4EBD9;
     background-image:
-        radial-gradient(#D65F59 1px, transparent 1px),
-        radial-gradient(#D65F59 1px, #fff 1px);
+        radial-gradient(#EC7114 1px, transparent 1px),
+        radial-gradient(#EC7114 1px, #fff 1px);
     background-position: 0 0, 20px 20px;
     background-size: 40px 40px;
     content: '';

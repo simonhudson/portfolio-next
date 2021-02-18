@@ -4,7 +4,7 @@ describe('theme/palette', () => {
     it('should return expected values', () => {
         expect(palette).toEqual({
             primary: {
-                brand: '#D65F59',
+                brand: '#EC7114',
                 bodyText: '#202020',
                 black: '#333',
                 white: '#fff',
