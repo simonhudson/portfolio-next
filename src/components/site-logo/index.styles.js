@@ -3,7 +3,7 @@ import { rem } from 'polished';
 
 const Logo = styled.svg`
     height: auto;
-    transition: all 0.5s ease-in-out;
+    //transition: all 0.5s ease-in-out;
     width: ${rem(50)};
 
     ${({ theme }) =>
