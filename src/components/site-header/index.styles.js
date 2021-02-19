@@ -7,7 +7,7 @@ const Wrapper = styled.div`
     padding: ${rem(20)} 0 ${rem(10)};
     position: sticky;
     top: -1px;
-    transition: box-shadow 0.5s ease-in-out, padding 0.5s ease-in-out;
+    /* transition: box-shadow 0.5s ease-in-out, padding 0.5s ease-in-out; */
     width: 100%;
     z-index: ${({ theme }) => theme.zIndex('site-header')};
 
@@ -51,7 +51,7 @@ const Strapline = styled.p`
 
     span {
         opacity: 0;
-        transition: all 0.5s ease-in-out;
+        //transition: all 0.5s ease-in-out;
 
         ${(props) =>
             props.isScrolled &&
