@@ -4,6 +4,7 @@ import SiteHeader from '~/components/site-header';
 import Hero from '~/components/hero';
 import Portfolio from '~/components/portfolio';
 import SiteFooter from '~/components/site-footer';
+import { GlobalStyles } from '~/theme/global.styles';
 class Home extends Component {
     constructor(props) {
         super(props);
@@ -28,6 +29,7 @@ class Home extends Component {
         const { state } = this;
         return (
             <>
+                <GlobalStyles />
                 <SiteHeader isScrolled={state.isScrolled} />
                 <Hero />
                 <layout.Wrap>
