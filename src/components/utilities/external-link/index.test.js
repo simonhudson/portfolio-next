@@ -22,6 +22,9 @@ describe('ExternalLink', () => {
         expect(objectUnderTest.find('a').prop('rel')).toEqual(
             'noopener noreferrer'
         );
+        expect(objectUnderTest.find('span').text()).toContain(
+            '(opens in a new tab/window)'
+        );
     });
 
     const initialise = (props) =>
