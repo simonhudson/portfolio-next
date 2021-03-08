@@ -1,13 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
+import { font, palette } from '~/theme';
 
 const GlobalStyles = createGlobalStyle`
     html,
     body,
     fieldset {
         box-sizing: border-box;
-        font-family: 'Open Sans', arial, helvetica, sans-serif;
-        font-size: 14px;
-        font-weight: 300;
+        font-family: ${font.sansSerif};
+        font-size: ${font.size};
+        font-weight: ${font.lineHeight};
         margin: 0;
         padding: 0;
         text-rendering: optimizeLegibility;
@@ -17,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     html {
-        color: #5d5d5d;
+        color: ${palette.bodyText};
         position: relative;
     }
 
