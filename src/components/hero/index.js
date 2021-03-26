@@ -1,7 +1,7 @@
 import React from 'react';
-import { Wrap, Inner, Title, SubTitle } from './index.styles';
+import { Wrap, Inner, Title } from './index.styles';
 import { layout } from '~/theme';
-import data from '~/components/links/data';
+import Links from '~/components/links';
 
 const Hero = () => {
     return (
@@ -16,12 +16,7 @@ const Hero = () => {
                         <strong>accessible</strong> and <strong>usable</strong>{' '}
                         websites and applications.
                     </Title>
-                    <SubTitle>
-                        You can have a look at what I&apos;ve been up to over at{' '}
-                        <a href={data.github.url}>Github</a>,{' '}
-                        <a href={data.stackOverflow.url}>StackOverflow</a> and{' '}
-                        <a href={data.linkedIn.url}>LinkedIn</a>
-                    </SubTitle>
+                    <Links />
                 </Inner>
             </layout.Wrap>
         </Wrap>

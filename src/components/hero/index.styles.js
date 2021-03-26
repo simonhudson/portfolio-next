@@ -56,15 +56,12 @@ const Inner = styled.div`
 `;
 
 const Title = styled.h1`
+    color: ${({ theme }) => theme.palette.primary.bodyText};
     font-family: ${({ theme }) => theme.font.serif};
     font-size: ${rem(20)};
     font-weight: 300;
     line-height: ${rem(38)};
     margin-bottom: ${({ theme }) => theme.margin.md};
-
-    strong {
-        color: ${({ theme }) => theme.palette.primary.brand};
-    }
 
     span {
         display: block;
