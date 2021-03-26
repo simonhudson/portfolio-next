@@ -18,7 +18,11 @@ const Links = (props) => {
                         rel="noopener noreferrer"
                     >
                         <Icon type="brand" name={item.icon} />
-                        <Text>{item.linkText}</Text>
+                        <Text>
+                            <VisuallyHidden>Visit my&nbsp;</VisuallyHidden>
+                            {item.linkText}
+                            <VisuallyHidden>&nbsp;profile</VisuallyHidden>
+                        </Text>
                         <VisuallyHidden>
                             {item.linkText}&nbsp;(opens in a new tab/window)
                         </VisuallyHidden>

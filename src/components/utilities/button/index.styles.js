@@ -5,7 +5,8 @@ const Button = styled.button`
     align-items: center;
     background: ${({ theme }) => theme.palette.primary.brand};
     border: 0;
-    border-radius: ${rem(5)};
+    box-shadow: 5px 5px 0px 0px
+        ${({ theme }) => theme.palette.primary.brandDark10};
     color: ${({ theme }) => theme.palette.primary.white};
     display: flex;
     font-size: ${rem(16)};

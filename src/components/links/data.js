@@ -1,17 +1,17 @@
-module.exports = {
-    github: {
-        linkText: 'Visit my Github profile',
+module.exports = [
+    {
+        linkText: 'Github',
         url: 'https://github.com/simonhudson',
         icon: 'github-square',
     },
-    stackOverflow: {
-        linkText: 'Visit my Stack Overflow profile',
+    {
+        linkText: 'Stack Overflow',
         url: 'https://stackoverflow.com/users/780782/simon-hudson',
         icon: 'stack-overflow',
     },
-    linkedIn: {
-        linkText: 'Visit my LinkedIn profile',
+    {
+        linkText: 'LinkedIn',
         url: 'https://www.linkedin.com/in/mrsimonhudson',
         icon: 'linkedin',
     },
-};
+];
