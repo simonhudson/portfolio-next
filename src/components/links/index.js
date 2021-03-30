@@ -16,6 +16,7 @@ const Links = (props) => {
                         href={item.url}
                         target="_blank"
                         rel="noopener noreferrer"
+                        className={`button-brand--${item.type}`}
                     >
                         <Icon type="brand" name={item.icon} />
                         <Text>

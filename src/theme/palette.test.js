@@ -5,7 +5,6 @@ describe('theme/palette', () => {
         expect(palette).toEqual({
             primary: {
                 brand: '#EC7114',
-                brandDark10: '#be5a0f',
                 bodyText: '#5d5d5d',
                 black: '#333',
                 white: '#fff',
@@ -15,6 +14,11 @@ describe('theme/palette', () => {
                 info: '#015cae',
                 success: '#01943b',
                 warning: '#eeb320',
+            },
+            brands: {
+                linkedIn: '#0077b5',
+                github: '#333',
+                stackOverflow: '#f48024',
             },
         });
     });

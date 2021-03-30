@@ -3,6 +3,7 @@ import { rem } from 'polished';
 import { Button } from '~/components/utilities/button/index.styles';
 
 const List = styled.ul`
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -12,12 +13,15 @@ const List = styled.ul`
         theme.media(
             'tablet-p',
             `
+            padding-top: ${theme.padding.md};
             flex-direction: row;
             `
         )};
 `;
 
 const Item = styled.li`
+    width: 75%;
+
     &:not(:last-of-type) {
         margin: 0 0 ${({ theme }) => theme.margin.md} 0;
     }
@@ -44,6 +48,21 @@ const Link = styled(Button)`
         &::before {
             text-shadow: 1px 1px
                 ${({ theme }) => theme.palette.primary.bodyText};
+        }
+    }
+
+    &.button-brand-- {
+        &github {
+            background-color: ${({ theme }) => theme.palette.brands.github};
+        }
+
+        &stackOverflow {
+            background-color: ${({ theme }) =>
+                theme.palette.brands.stackOverflow};
+        }
+
+        &linkedIn {
+            background-color: ${({ theme }) => theme.palette.brands.linkedIn};
         }
     }
 `;
