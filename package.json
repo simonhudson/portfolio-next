@@ -17,12 +17,12 @@
     "a11y": "axe.js"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "ejs": "^2.7.4",
     "husky": "^4.2.5",
     "lighthouse": "^6.0.0",
-    "next": "^9.5.5",
+    "next": "^10.0.5",
     "next-images": "^1.4.0",
     "next-secure-headers": "^2.0.0",
     "node-fetch": "^2.6.0",
