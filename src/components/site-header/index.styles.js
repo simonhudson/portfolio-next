@@ -50,7 +50,7 @@ const Strapline = styled.p`
     text-transform: uppercase;
 
     span {
-        opacity: 0;
+        /* opacity: 0; */
         //transition: all 0.5s ease-in-out;
 
         ${(props) =>

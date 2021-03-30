@@ -3,6 +3,7 @@ import { layout } from '~/theme';
 import { Wrapper, InnerWrap, Strapline } from './index.styles';
 import SiteLogo from '~/components/site-logo';
 import PropTypes from 'prop-types';
+import VisuallyHidden from '~/components/utilities/visually-hidden';
 
 const SiteHeader = (props) => {
     return (
@@ -10,13 +11,15 @@ const SiteHeader = (props) => {
             <layout.Wrap>
                 <InnerWrap>
                     <SiteLogo isScrolled={props.isScrolled} />
-                    <Strapline
-                        data-test="site-header__strapline"
-                        isScrolled={props.isScrolled}
-                    >
-                        <span>Web Design &amp; Development by </span>
-                        <span>Simon Hudson</span>
-                    </Strapline>
+                    <VisuallyHidden>
+                        <Strapline
+                            data-test="site-header__strapline"
+                            isScrolled={props.isScrolled}
+                        >
+                            <span>Web Design &amp; Development by </span>
+                            <span>Simon Hudson</span>
+                        </Strapline>
+                    </VisuallyHidden>
                 </InnerWrap>
             </layout.Wrap>
         </Wrapper>
