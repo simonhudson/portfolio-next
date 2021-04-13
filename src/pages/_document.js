@@ -32,6 +32,10 @@ class Layout extends Document {
 			<Html lang="en">
 				<Head>
 					<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+					<meta
+						name="description"
+						content="Personal site of Simon Hudson, a UI developer based in Derby, UK"
+					/>
 					<meta httpEquiv="X-UA-Compatible" content="ie=edge" />
 					<link
 						href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&amp;family=Open+Sans:wght@300;400;600;700&amp;display=swap"
