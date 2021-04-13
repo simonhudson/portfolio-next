@@ -69,10 +69,10 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
     }
 
-    details summary::marker,
-    details summary::-webkit-details-marker {
+    details summary::marker {
         display: none;
     }
+    
 `;
 
 export { GlobalStyles };
