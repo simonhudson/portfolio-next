@@ -36,6 +36,7 @@ const GlobalStyles = createGlobalStyle`
         position: absolute;
         top: 0;
         width: 100%;
+        z-index: -1;
     }
 
     ul, ol, dl {

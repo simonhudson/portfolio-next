@@ -21,6 +21,8 @@ const App = ({ Component, pageProps }) => {
 		route: router.route,
 	};
 
+	pageProps.showHolding = process.env.SHOW_HOLDING.toLowerCase() === 'true';
+
 	let pageTitle = 'Web Design & Development by Simon Hudson';
 
 	return (
@@ -30,7 +32,7 @@ const App = ({ Component, pageProps }) => {
 			</Head>
 			<ThemeProvider theme={Theme}>
 				<GlobalStyles />
-				<SiteHeader />
+				{!pageProps.showHolding && <SiteHeader />}
 				<main>
 					<Component {...pageProps} />
 				</main>
