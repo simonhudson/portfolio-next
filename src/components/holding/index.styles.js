@@ -3,6 +3,7 @@ import { rem } from 'polished';
 
 const Wrapper = styled.div`
 	align-items: center;
+	background: ${({ theme }) => theme.palette.primary.brand};
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
@@ -10,6 +11,7 @@ const Wrapper = styled.div`
 `;
 
 const Tagline = styled.h1`
+	color: ${({ theme }) => theme.palette.primary.white};
 	font-weight: 300;
 	text-align: center;
 
@@ -18,15 +20,14 @@ const Tagline = styled.h1`
 	}
 
 	span:first-of-type {
-		color: #7a7a7a;
+		/* color: #7a7a7a; */
 		font-size: ${rem(16)};
 		text-transform: lowercase;
 	}
 
 	span:last-of-type {
-		color: ${({ theme }) => theme.palette.primary.bodyText};
+		/* color: ${({ theme }) => theme.palette.primary.bodyText}; */
 		font-size: ${rem(36)};
-		font-weight: 500;
 		text-transform: uppercase;
 	}
 `;
@@ -35,6 +36,17 @@ const LinksList = styled.ul`
 	display: flex;
 	justify-content: space-around;
 	list-style: none;
+	position: relative;
+
+	&::before {
+		border-top: 1px solid ${({ theme }) => theme.palette.primary.white};
+		content: '';
+		left: 0;
+		opacity: 0.25;
+		position: absolute;
+		top: ${rem(-20)};
+		width: 100%;
+	}
 `;
 
 const LinksItem = styled.li`
@@ -44,7 +56,7 @@ const LinksItem = styled.li`
 `;
 
 const LinksLink = styled.a`
-	color: ${({ theme }) => theme.palette.primary.brand};
+	color: ${({ theme }) => theme.palette.primary.white};
 	font-weight: 500;
 	text-decoration: none;
 	text-transform: uppercase;
